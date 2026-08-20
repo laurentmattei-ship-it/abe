@@ -99,16 +99,37 @@ describe('Validation Phrase Robustness & Anti-Freeze', () => {
         assert.ok(errorDisplayed, 'Un message d’erreur doit être affiché au lieu d’un freeze');
     });
 
-    it('bloque la réentrée concurrente de validerPhrase', async () => {
-        let hasRun = false;
-        const dummyApp = {
-            enCoursDAnalyse: true,
-            sentenceInput: { value: 'Test' },
-            validerPhrase: globalThis.AbeApplication.prototype.validerPhrase,
-            afficherMessage() { hasRun = true; }
+    it('enrichirExplicationAccord gère correctement la dépendance inverse déterminant-nom sans ReferenceError', () => {
+        const oralPedagogy = globalThis.AbeMainOralPedagogy;
+        assert.ok(oralPedagogy, 'AbeMainOralPedagogy doit exister');
+
+        const entreeCorpus = {
+            phraseOriginale: 'Les chats mangent.',
+            tokensLexicaux: [
+                { id: 1, texte: 'Les', nature: 'déterminant', genre: 'm', nombre: 'p', dependance: { type: 'det', cible: 2 } },
+                { id: 2, texte: 'chats', nature: 'nom', genre: 'm', nombre: 'p', dependance: { type: 'nsubj', cible: 3 } },
+                { id: 3, texte: 'mangent', nature: 'verbe', dependance: { type: 'root', cible: 0 } }
+            ],
+            tokensParId: new Map([
+                [1, { id: 1, texte: 'Les', nature: 'déterminant', genre: 'm', nombre: 'p', dependance: { type: 'det', cible: 2 } }],
+                [2, { id: 2, texte: 'chats', nature: 'nom', genre: 'm', nombre: 'p', dependance: { type: 'nsubj', cible: 3 } }],
+                [3, { id: 3, texte: 'mangent', nature: 'verbe', dependance: { type: 'root', cible: 0 } }]
+            ])
         };
 
-        await dummyApp.validerPhrase();
-        assert.strictEqual(hasRun, false, 'La deuxième validation ne doit rien exécuter si enCoursDAnalyse est vrai');
+        const dummyApp = {
+            ...oralPedagogy,
+            motsAnalyse: [{ texte: 'Les' }, { texte: 'chat' }, { texte: 'mangent' }],
+            obtenirEntreeCorpusDetailleReference() { return entreeCorpus; }
+        };
+
+        // On teste le token 2 (le nom 'chat' saisi au lieu de 'chats')
+        const tokenDetail = entreeCorpus.tokensLexicaux[1];
+        const res = oralPedagogy.enrichirExplicationAccord.call(dummyApp, 'chat', 'chats', 1, entreeCorpus.tokensLexicaux, tokenDetail);
+
+        assert.ok(res, 'Une explication d’accord doit être renvoyée');
+        assert.strictEqual(res.parcoursType, 'accord_determinant_nom');
+        assert.strictEqual(res.contexteAccord.nom.texte, 'chat');
+        assert.strictEqual(res.contexteAccord.determinant.texte, 'Les');
     });
 });

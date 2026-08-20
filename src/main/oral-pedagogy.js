@@ -621,6 +621,7 @@ enrichirExplicationAccord(motSaisi, motAttendu, index = -1, tokensReference = []
                 const nombreDet = String(t.nombre || '');
                 // Afficher ce que l'utilisateur a écrit, pas la réponse du corpus
                 const texteSaisiDet = texteSaisiPourToken(t) || t.texte;
+                const texteSaisiNom = texteSaisiPourIndex(index) || motSaisi;
                 const detInfo = { texte: texteSaisiDet, donnees: t };
                 const nomInfo = { texte: texteSaisiNom, donnees: tokenDetail };
                 return {
@@ -864,7 +865,6 @@ enrichirExplicationAccord(motSaisi, motAttendu, index = -1, tokensReference = []
 }
 
 enrichirExplicationOrale(motSaisi, motAttendu, index = -1, tokensReference = []) {
-    console.time('[DEBUG] enrichirExplicationOrale ' + motSaisi + '→' + motAttendu);
     const base1 = (typeof this.normaliserTokenComparaison === 'function')
         ? this.normaliserTokenComparaison(motSaisi)
         : String(motSaisi || '').toLowerCase().trim();
@@ -1354,8 +1354,6 @@ enrichirExplicationOrale(motSaisi, motAttendu, index = -1, tokensReference = [])
 
     // Retourner sans les champs internes categorie/priorite
     const { categorie, priorite, ...resultatFinal } = meilleur;
-    console.log('[DEBUG] enrichirExplicationOrale RESULT', motSaisi, '→', motAttendu, 'cat:', categorie, 'parcoursType:', resultatFinal.parcoursType);
-    console.timeEnd('[DEBUG] enrichirExplicationOrale ' + motSaisi + '→' + motAttendu);
     return resultatFinal;
 }
 

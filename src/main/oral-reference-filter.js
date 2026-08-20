@@ -1,7 +1,6 @@
 (function (global) {
     const api = {
         construireErreurReferenceOrale(index, tokenSaisi, tokenAttendu, tokensReference = []) {
-            console.log('[DEBUG] construireErreurReferenceOrale', index, tokenSaisi && tokenSaisi.texte, '→', tokenAttendu && tokenAttendu.texte);
             const motSaisi = tokenSaisi && typeof tokenSaisi.texte === 'string' ? tokenSaisi.texte : '';
             const motAttendu = tokenAttendu && typeof tokenAttendu.texte === 'string' ? tokenAttendu.texte : '';
             const estPonctuation = /^[.,;:!?]$/.test(motAttendu || motSaisi);
@@ -173,7 +172,6 @@
         },
 
         appliquerFiltreReferenceOrale(phraseSaisie, resultatAnalyse) {
-            console.time('[DEBUG] appliquerFiltreReferenceOrale');
             if (!resultatAnalyse || !Array.isArray(resultatAnalyse.mots) || !Array.isArray(resultatAnalyse.erreurs)) {
                 return resultatAnalyse;
             }
@@ -201,7 +199,6 @@
             const positionsDivergentes = (alignement && alignement.divergentes instanceof Set)
                 ? alignement.divergentes
                 : new Set();
-            console.log('[DEBUG] divergences:', positionsDivergentes.size, 'omissions:', omissions.length);
 
             if (positionsDivergentes.size === 0) {
                 const fauxPositifsAnnules = Array.isArray(resultatAnalyse.erreurs) ? resultatAnalyse.erreurs.length : 0;
@@ -245,7 +242,6 @@
                 erreurs: erreursFiltrees
             };
 
-            console.log('[DEBUG] AVANT ajouterErreursReferenceOraleManquantes');
             const resultatAvecErreursReference = this.ajouterErreursReferenceOraleManquantes(
                 resultatFiltre,
                 tokensSaisis,
@@ -253,7 +249,6 @@
                 positionsDivergentes,
                 omissions
             );
-            console.log('[DEBUG] APRÈS ajouterErreursReferenceOraleManquantes, erreurs:', resultatAvecErreursReference.erreurs.length);
 
             const resultatAvecPonctuation = this.ajouterErreurPonctuationFinaleReference(
                 resultatAvecErreursReference, phraseSaisie, phraseReference
@@ -261,8 +256,6 @@
 
             const resultatSansDoublonPonctuation = this.dedupliquerErreursPonctuationFinale(resultatAvecPonctuation);
 
-            console.log('[DEBUG] appliquerFiltreReferenceOrale DONE, divergences:', positionsDivergentes.size, 'erreurs:', resultatSansDoublonPonctuation.erreurs.length);
-            console.timeEnd('[DEBUG] appliquerFiltreReferenceOrale');
             this.statutFiltrageOral = {
                 actif: true,
                 correspondanceExacte: false,

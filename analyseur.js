@@ -147,9 +147,7 @@ class AnalyseurGrammatical {
         ];
 
         for (let i = 0; i < etapes.length; i += 1) {
-            console.log('[DEBUG] analyserPhraseProgressive étape', i + 1, '/', etapes.length, 'START');
             etapes[i]();
-            console.log('[DEBUG] analyserPhraseProgressive étape', i + 1, '/', etapes.length, 'DONE, erreurs:', this.erreursTrouvees.length);
             if (onProgress) {
                 onProgress({
                     etape: i + 1,

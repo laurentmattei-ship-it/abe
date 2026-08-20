@@ -4,7 +4,6 @@
 
     const api = {
         demarrerAide() {
-            console.log('[DEBUG] demarrerAide', this.erreurActuelle?.type, this.erreurActuelle?.parcoursType, this.erreurActuelle?.mot);
             if (!this.erreurActuelle) return;
 
             if (this.erreurActuelle.type === 'reference_orale_mot_manquant') {
