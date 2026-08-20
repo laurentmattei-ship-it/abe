@@ -5,6 +5,7 @@
 
 class AbeApplication {
     constructor() {
+        this.enCoursDAnalyse = false;
         this.analyseur = new AnalyseurGrammatical();
         this.dictionnaireCharge = false;
         this.phraseActuelle = '';
@@ -367,8 +368,9 @@ class AbeApplication {
      */
     attacherEvenements() {
         this.validateBtn.addEventListener('click', () => this.validerPhrase());
-        this.sentenceInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter' && e.ctrlKey) {
+        this.sentenceInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && (e.ctrlKey || !e.shiftKey)) {
+                e.preventDefault();
                 this.validerPhrase();
             }
         });
@@ -414,8 +416,9 @@ class AbeApplication {
             });
         }
 
-        this.correctionField.addEventListener('keypress', (e) => {
+        this.correctionField.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
+                e.preventDefault();
                 this.soumettreCorrection();
             }
         });
@@ -425,6 +428,10 @@ class AbeApplication {
      * Valide la phrase saisie et lance l'analyse
      */
     async validerPhrase() {
+        if (this.enCoursDAnalyse) {
+            return;
+        }
+
         const phrase = this.sentenceInput.value.trim();
         if (!phrase) {
             this.afficherMessage('Veuillez écrire une phrase avant de valider.', 'info');
@@ -438,86 +445,100 @@ class AbeApplication {
             return;
         }
 
-        if (phraseReferenceOrale && reconnaissanceOrale.reconnue && typeof window !== 'undefined') {
-            window.dispatchEvent(new CustomEvent('abe-dictee-orale-phrase-validee', {
-                detail: { phrase: phraseReferenceOrale }
-            }));
-        }
+        this.enCoursDAnalyse = true;
+        if (this.validateBtn) this.validateBtn.disabled = true;
+        if (this.sentenceInput) this.sentenceInput.disabled = true;
 
-        this.phraseActuelle = phrase;
-        this.felicitationsEnAttente = false;
-        // Nouvelle phrase: on réinitialise l'état de correction pour la phrase courante
-        this.erreursCorrigees.clear();
-        this.essaisGuidesParErreur.clear();
-        this.essaisDirectsParErreur.clear();
-        
-        // Vérification que le dictionnaire est chargé
-        if (!this.dictionnaireCharge) {
-            console.error('Dictionnaire non chargé');
-            this.afficherMessage('Veuillez patienter, le dictionnaire est en cours de chargement...', 'info');
-            return;
-        }
+        try {
+            if (phraseReferenceOrale && reconnaissanceOrale.reconnue && typeof window !== 'undefined') {
+                window.dispatchEvent(new CustomEvent('abe-dictee-orale-phrase-validee', {
+                    detail: { phrase: phraseReferenceOrale }
+                }));
+            }
 
-        this.montrerModalAnalyse('Préparation de l’analyse…', 12);
-        await this.attendreRendu();
-        await this.attendreRendu();
-        this.mettreAJourModalAnalyse('Repérage des mots et des accords…', 34);
-        await new Promise((resolve) => setTimeout(resolve, 80));
+            this.phraseActuelle = phrase;
+            this.felicitationsEnAttente = false;
+            // Nouvelle phrase: on réinitialise l'état de correction pour la phrase courante
+            this.erreursCorrigees.clear();
+            this.essaisGuidesParErreur.clear();
+            this.essaisDirectsParErreur.clear();
+            
+            // Vérification que le dictionnaire est chargé
+            if (!this.dictionnaireCharge) {
+                console.error('Dictionnaire non chargé');
+                this.afficherMessage('Veuillez patienter, le dictionnaire est en cours de chargement...', 'info');
+                return;
+            }
 
-        const analyserProgressive = typeof this.analyseur.analyserPhraseProgressive === 'function';
-        let resultat;
-        if (analyserProgressive) {
-            resultat = await this.analyseur.analyserPhraseProgressive(phrase, {
-                pauseMs: 0,
-                onProgress: ({ etape, totalEtapes }) => {
-                    const ratio = totalEtapes > 0 ? etape / totalEtapes : 1;
-                    const progression = Math.min(86, Math.max(36, Math.round(36 + (ratio * 50))));
-                    this.mettreAJourModalAnalyse('Repérage des mots et des accords…', progression);
+            this.montrerModalAnalyse('Préparation de l’analyse…', 12);
+            await this.attendreRendu();
+            await this.attendreRendu();
+            this.mettreAJourModalAnalyse('Repérage des mots et des accords…', 34);
+            await new Promise((resolve) => setTimeout(resolve, 80));
+
+            const analyserProgressive = typeof this.analyseur?.analyserPhraseProgressive === 'function';
+            let resultat;
+            if (analyserProgressive) {
+                resultat = await this.analyseur.analyserPhraseProgressive(phrase, {
+                    pauseMs: 0,
+                    onProgress: ({ etape, totalEtapes }) => {
+                        const ratio = totalEtapes > 0 ? etape / totalEtapes : 1;
+                        const progression = Math.min(86, Math.max(36, Math.round(36 + (ratio * 50))));
+                        this.mettreAJourModalAnalyse('Repérage des mots et des accords…', progression);
+                    }
+                });
+            } else if (typeof this.analyseur?.analyserPhrase === 'function') {
+                resultat = this.analyseur.analyserPhrase(phrase);
+            } else {
+                resultat = { mots: [], erreurs: [] };
+            }
+
+            this.mettreAJourModalAnalyse('Application des corrections de dictée…', 92);
+            await this.attendreRendu();
+            resultat = this.appliquerFiltreReferenceOrale(phrase, resultat);
+
+            const rawMots = (resultat && Array.isArray(resultat.mots)) ? resultat.mots : [];
+            const rawErreurs = (resultat && Array.isArray(resultat.erreurs)) ? resultat.erreurs : [];
+
+            this.motsAnalyse = rawMots;
+            this.erreurs = this.ordonnerErreursPourCorrection(
+                this.filtrerErreursActionnables(rawErreurs)
+            );
+            this.motsAnalyse.forEach((mot) => {
+                if (mot && Array.isArray(mot.erreurs)) {
+                    mot.erreurs = this.ordonnerErreursPourCorrection(
+                        this.filtrerErreursActionnables(mot.erreurs)
+                    );
                 }
             });
-        } else {
-            resultat = this.analyseur.analyserPhrase(phrase);
-        }
 
-        this.mettreAJourModalAnalyse('Application des corrections de dictée…', 92);
-        await this.attendreRendu();
-        console.log('[DEBUG] AVANT appliquerFiltreReferenceOrale');
-        resultat = this.appliquerFiltreReferenceOrale(phrase, resultat);
-        console.log('[DEBUG] APRÈS appliquerFiltreReferenceOrale');
-        this.motsAnalyse = Array.isArray(resultat.mots) ? resultat.mots : [];
-        console.log('[DEBUG] AVANT ordonnerErreursPourCorrection, erreurs:', resultat.erreurs.length);
-        this.erreurs = this.ordonnerErreursPourCorrection(
-            this.filtrerErreursActionnables(resultat.erreurs)
-        );
-        console.log('[DEBUG] APRÈS ordonnerErreursPourCorrection, erreurs filtrées:', this.erreurs.length);
-        this.motsAnalyse.forEach((mot) => {
-            if (mot && Array.isArray(mot.erreurs)) {
-                mot.erreurs = this.ordonnerErreursPourCorrection(
-                    this.filtrerErreursActionnables(mot.erreurs)
-                );
+            this.mettreAJourModalAnalyse('Analyse terminée.', 100);
+            await this.attendre(60);
+
+            // Stats session: on cumule les erreurs trouvées sur la session
+            this.ajouterErreursTrouveesSession(this.erreurs.length);
+
+            // Affichage des tuiles
+            this.afficherTuiles();
+            this.mettreAJourProgression();
+
+            // Transition vers la section des tuiles
+            this.inputSection.classList.add('hidden');
+            this.tilesSection.classList.remove('hidden');
+
+            if (this.erreurs.length === 0) {
+                this.afficherMessage('🎉 Bravo ! Ta phrase est parfaite !', 'success');
+            } else {
+                this.afficherMessage(`J'ai trouvé ${this.erreurs.length} erreur(s) à corriger. Clique sur les mots orange pour commencer !`, 'info');
             }
-        });
-
-        console.log('[DEBUG] AVANT afficherTuiles');
-        this.mettreAJourModalAnalyse('Analyse terminée.', 100);
-        await this.attendre(60);
-        this.masquerModalAnalyse();
-
-        // Stats session: on cumule les erreurs trouvées sur la session
-        this.ajouterErreursTrouveesSession(this.erreurs.length);
-
-        // Affichage des tuiles
-        this.afficherTuiles();
-        this.mettreAJourProgression();
-
-        // Transition vers la section des tuiles
-        this.inputSection.classList.add('hidden');
-        this.tilesSection.classList.remove('hidden');
-
-        if (this.erreurs.length === 0) {
-            this.afficherMessage('🎉 Bravo ! Ta phrase est parfaite !', 'success');
-        } else {
-            this.afficherMessage(`J'ai trouvé ${this.erreurs.length} erreur(s) à corriger. Clique sur les mots orange pour commencer !`, 'info');
+        } catch (err) {
+            console.error('Erreur lors de l’analyse de la phrase :', err);
+            this.afficherMessage('Une erreur est survenue pendant l’analyse. Peux-tu réessayer ?', 'error');
+        } finally {
+            this.masquerModalAnalyse();
+            this.enCoursDAnalyse = false;
+            if (this.validateBtn) this.validateBtn.disabled = false;
+            if (this.sentenceInput) this.sentenceInput.disabled = false;
         }
     }
 
@@ -1483,9 +1504,13 @@ class AbeApplication {
     }
 }
 
-if (window.AbeMainBootstrap && typeof window.AbeMainBootstrap.initialiserApplication === 'function') {
+if (typeof globalThis !== 'undefined') {
+    globalThis.AbeApplication = AbeApplication;
+}
+
+if (typeof window !== 'undefined' && window.AbeMainBootstrap && typeof window.AbeMainBootstrap.initialiserApplication === 'function') {
     window.AbeMainBootstrap.initialiserApplication(AbeApplication);
-} else {
+} else if (typeof document !== 'undefined') {
     document.addEventListener('DOMContentLoaded', () => {
         window.abeApp = new AbeApplication();
     });

@@ -133,7 +133,7 @@
 
         ordonnerErreursPourCorrection(liste) {
             if (!Array.isArray(liste)) return [];
-            return [...liste].sort((a, b) => this.comparerErreurs(a, b));
+            return [...liste].filter(Boolean).sort((a, b) => this.comparerErreurs(a, b));
         },
 
         estErreurActionnable(erreur) {
