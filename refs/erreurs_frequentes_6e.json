@@ -1,0 +1,328 @@
+{
+  "source": "Ministere de l'Education du Quebec - Erreurs les plus frequentes des eleves, epreuve ministerielle d'ecriture, 6e annee du primaire (juin 2024)",
+  "fautesLexicales": [
+    {
+      "fautif": "aujourdhui",
+      "correction": "aujourd'hui",
+      "type": "mot_inconnu",
+      "regle": "Verifie la graphie des mots courants dans le dictionnaire.",
+      "explication": "Le mot \"aujourdhui\" est une faute frequente de graphie."
+    },
+    {
+      "fautif": "anfent",
+      "correction": "enfant",
+      "type": "mot_inconnu",
+      "regle": "Verifie la graphie des mots courants dans le dictionnaire.",
+      "explication": "Le mot \"anfent\" est une faute frequente de graphie."
+    },
+    {
+      "fautif": "actualitee",
+      "correction": "actualité",
+      "type": "mot_inconnu",
+      "regle": "Verifie l'orthographe d'usage des mots courants.",
+      "explication": "Le mot \"actualitée\" doit s'ecrire \"actualité\"."
+    }
+  ],
+  "motifs": [
+    {
+      "contexte": ["chaque", "élèves"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "élève",
+      "regle": "Le nom s'accorde en nombre avec le determinant qui le precede.",
+      "explication": "Avec \"chaque\", on attend un nom au singulier."
+    },
+    {
+      "contexte": ["les", "journal"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "journaux",
+      "regle": "Le nom s'accorde en nombre avec le determinant qui le precede.",
+      "explication": "Avec \"les\", le nom doit etre au pluriel."
+    },
+    {
+      "contexte": ["tu", "pourraient"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "pourrais",
+      "regle": "Le verbe doit s'accorder avec un sujet pronominal.",
+      "explication": "Avec \"tu\", la terminaison du verbe n'est pas celle du pluriel.",
+      "nombreSujet": "singulier"
+    },
+    {
+      "contexte": ["on", "aurais"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "aurait",
+      "regle": "Le verbe doit s'accorder avec un sujet pronominal.",
+      "explication": "Avec \"on\", le verbe s'accorde comme un sujet singulier."
+    },
+    {
+      "contexte": ["on", "vas"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "va",
+      "regle": "Le verbe doit s'accorder avec un sujet pronominal.",
+      "explication": "Avec \"on\", on utilise la forme \"va\"."
+    },
+    {
+      "contexte": ["qui", "avais"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "avait",
+      "regle": "Avec \"qui\" sujet singulier, le verbe se met à la 3e personne du singulier.",
+      "explication": "Ici, il faut écrire \"avait\"."
+    },
+    {
+      "contexte": ["ils", "termines"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "terminent",
+      "regle": "Le verbe doit s'accorder avec le sujet au pluriel.",
+      "explication": "Avec \"ils\", on attend une terminaison de 3e personne du pluriel.",
+      "nombreSujet": "pluriel"
+    },
+    {
+      "contexte": ["cet", "arguments"],
+      "cible": 0,
+      "type": "accord_determinant_nom",
+      "correction": "ces",
+      "regle": "Le determinant doit s'accorder en nombre avec le nom.",
+      "explication": "Devant un nom pluriel, il faut un determinant pluriel."
+    },
+    {
+      "contexte": ["tout", "les", "jours"],
+      "cible": 0,
+      "type": "accord_determinant_nom",
+      "correction": "tous",
+      "regle": "Le determinant doit s'accorder en nombre avec le nom.",
+      "explication": "Dans \"tous les jours\", le mot \"tous\" prend la marque du pluriel."
+    },
+    {
+      "contexte": ["les", "jeune", "lit"],
+      "cible": 0,
+      "type": "accord_determinant_nom",
+      "correction": "le",
+      "regle": "Le determinant doit s'accorder en nombre avec le nom.",
+      "explication": "Le nom \"lit\" est au singulier dans cet exemple."
+    },
+    {
+      "contexte": ["le", "premiers", "sport"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "premier",
+      "regle": "L'adjectif s'accorde en nombre avec le nom qu'il qualifie.",
+      "explication": "Le nom \"sport\" est singulier."
+    },
+    {
+      "contexte": ["mes", "expériences", "scientifique"],
+      "cible": 2,
+      "type": "accord_adjectif_nom",
+      "correction": "scientifiques",
+      "regle": "L'adjectif s'accorde en nombre avec le nom qu'il qualifie.",
+      "explication": "Le nom \"expériences\" est pluriel."
+    },
+    {
+      "contexte": ["les", "petit", "monstres"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "petits",
+      "regle": "L'adjectif s'accorde en nombre avec le nom qu'il qualifie.",
+      "explication": "Le nom \"monstres\" est pluriel."
+    },
+    {
+      "contexte": ["cher", "madame"],
+      "cible": 0,
+      "type": "accord_adjectif_nom",
+      "correction": "chère",
+      "regle": "L'adjectif s'accorde en genre avec le nom qu'il qualifie.",
+      "explication": "\"Madame\" est feminin."
+    },
+    {
+      "contexte": ["actualité", "international"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "internationale",
+      "regle": "L'adjectif s'accorde en genre avec le nom qu'il qualifie.",
+      "explication": "\"actualité\" est feminin."
+    },
+    {
+      "contexte": ["domaine", "préférée"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "préféré",
+      "regle": "L'adjectif s'accorde en genre avec le nom qu'il qualifie.",
+      "explication": "\"domaine\" est masculin."
+    },
+    {
+      "contexte": ["jeunes", "reste"],
+      "cible": 1,
+      "type": "accord_sujet_verbe",
+      "correction": "restent",
+      "regle": "Le verbe doit s'accorder avec son sujet.",
+      "explication": "Avec un sujet pluriel, le verbe doit etre au pluriel.",
+      "nombreSujet": "pluriel"
+    },
+    {
+      "contexte": ["radio", "peux"],
+      "cible": 1,
+      "type": "accord_sujet_verbe",
+      "correction": "peut",
+      "regle": "Le verbe doit s'accorder avec son sujet.",
+      "explication": "Avec un sujet singulier, le verbe doit etre au singulier.",
+      "nombreSujet": "singulier"
+    },
+    {
+      "contexte": ["on", "attend", "que", "les", "voisins", "ont", "fini"],
+      "cible": 5,
+      "type": "homophone_on_ont",
+      "correction": "aient",
+      "regle": "Apres certaines expressions comme attendre que, on emploie souvent le subjonctif.",
+      "explication": "Dans ce contexte, la forme attendue est \"aient\"."
+    },
+    {
+      "contexte": ["a", "perdu", "m'ont", "stylo"],
+      "cible": 2,
+      "type": "homophone_mon_mont",
+      "correction": "mon",
+      "regle": "Devant un nom, on emploie un determinant possessif.",
+      "explication": "Devant \"stylo\", il faut \"mon\"."
+    },
+    {
+      "contexte": ["voulez", "-", "vous", "jouée"],
+      "cible": 3,
+      "type": "verbe_infinitif_requis",
+      "correction": "jouer",
+      "regle": "Apres un verbe comme vouloir, on attend un infinitif.",
+      "explication": "Apres \"voulez-vous\", il faut l'infinitif \"jouer\"."
+    },
+    {
+      "contexte": ["les", "enfants", "de", "ma", "tante", "joue"],
+      "cible": 5,
+      "type": "accord_sujet_verbe",
+      "correction": "jouent",
+      "regle": "Le verbe s'accorde avec le noyau du sujet.",
+      "explication": "Le noyau du sujet est \"enfants\" (pluriel), donc le verbe doit etre au pluriel."
+    },
+    {
+      "contexte": ["le", "groupe", "de", "touristes", "arrivent"],
+      "cible": 4,
+      "type": "accord_sujet_verbe",
+      "correction": "arrive",
+      "regle": "Avec un nom collectif singulier (groupe, classe...), le verbe est en general au singulier.",
+      "explication": "Le sujet \"groupe\" est singulier."
+    },
+    {
+      "contexte": ["la", "plupart", "des", "élèves", "réussit"],
+      "cible": 4,
+      "type": "accord_sujet_verbe",
+      "correction": "réussissent",
+      "regle": "Avec \"la plupart de\", l'accord se fait le plus souvent avec le complement.",
+      "explication": "Le complement \"eleves\" est au pluriel."
+    },
+    {
+      "contexte": ["les", "feuilles", "tombent", "et", "tournoie"],
+      "cible": 4,
+      "type": "accord_sujet_verbe",
+      "correction": "tournoient",
+      "regle": "Dans une coordination verbale avec meme sujet, les verbes gardent le meme accord.",
+      "explication": "Le deuxieme verbe doit reprendre l'accord pluriel de \"tombent\"."
+    },
+    {
+      "contexte": ["qui", "est", "ces", "garçons"],
+      "cible": 1,
+      "type": "accord_sujet_verbe",
+      "correction": "sont",
+      "regle": "Dans l'interrogation, le verbe s'accorde avec le sujet reel.",
+      "explication": "Le sujet reel est pluriel (\"garcons\")."
+    },
+    {
+      "contexte": ["les", "petite", "fleurs", "bleu"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "petites",
+      "regle": "L'adjectif s'accorde avec le nom.",
+      "explication": "\"fleurs\" est feminin pluriel."
+    },
+    {
+      "contexte": ["les", "petite", "fleurs", "bleu"],
+      "cible": 3,
+      "type": "accord_adjectif_nom",
+      "correction": "bleues",
+      "regle": "L'adjectif s'accorde avec le nom.",
+      "explication": "\"fleurs\" est feminin pluriel."
+    },
+    {
+      "contexte": ["des", "beaux", "travails", "sont", "exposés"],
+      "cible": 2,
+      "type": "accord_nom_nombre",
+      "correction": "travaux",
+      "regle": "Certains mots en -ail forment leur pluriel en -aux.",
+      "explication": "Le pluriel de \"travail\" est \"travaux\"."
+    },
+    {
+      "contexte": ["des", "beaux", "travails", "sont", "exposés"],
+      "cible": 4,
+      "type": "conjugaison_verbe",
+      "correction": "exposés",
+      "regle": "Apres \"sont\", ici la forme attendue est deja un participe passe pluriel.",
+      "explication": "On conserve \"exposes\" au pluriel."
+    },
+    {
+      "contexte": ["des", "beaux", "travails", "sont", "exposés"],
+      "cible": 3,
+      "type": "accord_sujet_verbe",
+      "correction": "sont",
+      "regle": "Le sujet nominal est pluriel: l'auxiliaire reste au pluriel.",
+      "explication": "Avec \"des beaux travails\", la forme correcte de l'auxiliaire est \"sont\"."
+    },
+    {
+      "contexte": ["deux", "cent", "euros"],
+      "cible": 1,
+      "type": "accord_nombre_cent",
+      "correction": "cents",
+      "regle": "\"cent\" prend un s quand il est multiplie et non suivi d'un autre nombre.",
+      "explication": "Dans \"deux cents euros\", on ecrit \"cents\"."
+    },
+    {
+      "contexte": ["un", "boisson", "bleu"],
+      "cible": 1,
+      "type": "confusion_phonographique",
+      "correction": "poisson",
+      "regle": "En cas de mot improbable, on propose le mot proche adapte au contexte.",
+      "explication": "Avec \"un ... bleu\", le mot attendu est \"poisson\"."
+    },
+    {
+      "contexte": ["si", "j'", "aurais", "su"],
+      "cible": 2,
+      "type": "conditionnel_apres_si",
+      "correction": "avais",
+      "regle": "Apres \"si\", on n'emploie pas le conditionnel.",
+      "explication": "On attend ici l'imparfait: \"j'avais\"."
+    },
+    {
+      "contexte": ["si", "j'", "aurais", "su"],
+      "cible": 3,
+      "type": "conditionnel_apres_si",
+      "correction": "connu",
+      "regle": "Correction attendue dans cette tournure figee de test.",
+      "explication": "La forme cible retenue ici est \"j'avais connu\"."
+    },
+    {
+      "contexte": ["pas", "le", "tient"],
+      "cible": 2,
+      "type": "confusion_possessif",
+      "correction": "tien",
+      "regle": "Les possessifs s'ecrivent: mien, tien, sien...",
+      "explication": "Ici, la forme correcte est \"tien\"."
+    },
+    {
+      "contexte": ["est", "enfin", "finit"],
+      "cible": 2,
+      "type": "verbe_participe_requis",
+      "correction": "fini",
+      "regle": "Ici, on attend le participe/adjectif \"fini\", pas la forme verbale \"finit\".",
+      "explication": "Dans \"c'est enfin fini\", la forme correcte est \"fini\"."
+    }
+  ]
+}

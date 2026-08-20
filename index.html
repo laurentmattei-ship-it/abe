@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abe - Apprendre à bien écrire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">📝 Abe</h1>
+            <p class="subtitle">Apprendre à bien écrire</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Zone de saisie initiale -->
+            <section id="input-section" class="input-section">
+                <div class="input-container">
+                    <label for="sentence-input" class="input-label">
+                        Dictée orale :
+                    </label>
+                    <textarea 
+                        id="sentence-input" 
+                        class="sentence-input" 
+                        placeholder="Clique sur ▶ dans la télécommande pour écouter la phrase..."
+                        rows="3"
+                        spellcheck="false"
+                        autocorrect="off"
+                        autocapitalize="off"
+                    ></textarea>
+                    <div class="input-actions">
+                        <button id="validate-btn" class="btn btn-primary" type="button">
+                            ✨ Valider ma phrase
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Zone d'affichage des mots en tuiles -->
+            <section id="tiles-section" class="tiles-section hidden">
+                <div class="sentence-container">
+                    <div id="words-container" class="words-container"></div>
+                </div>
+                
+                <!-- Zone d'interaction pour les mots avec erreurs -->
+                <div id="word-interaction" class="word-interaction hidden">
+                    <div class="interaction-buttons">
+                        <button id="found-btn" class="btn btn-success">
+                            🎯 J'ai la solution
+                        </button>
+                        <button id="help-btn" class="btn btn-info">
+                            💡 J'ai besoin d'aide
+                        </button>
+                    </div>
+                    <div id="quick-actions" class="quick-actions hidden"></div>
+                    
+                    <!-- Champ de correction -->
+                    <div id="correction-input" class="correction-input hidden">
+                        <label for="correction-field" class="correction-label">
+                            Comment corriges-tu ce mot ?
+                        </label>
+                        <input 
+                            type="text" 
+                            id="correction-field" 
+                            class="correction-field"
+                            placeholder="Écris ta correction ici"
+                            spellcheck="false"
+                            autocorrect="off"
+                            autocapitalize="off"
+                        >
+                        <div class="correction-buttons">
+                            <button id="submit-correction" class="btn btn-success">
+                                ✅ Valider
+                            </button>
+                            <button id="cancel-correction" class="btn btn-secondary">
+                                ❌ Annuler
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Zone de questionnement maïeutique -->
+            <section id="question-section" class="question-section hidden">
+                <div class="question-container">
+                    <div id="question-header" class="question-header">
+                        <span class="question-icon">🤔</span>
+                        <h3 class="question-title">Questions pour t'aider</h3>
+                    </div>
+                    <div id="question-text" class="question-text"></div>
+                    <div id="answer-options" class="answer-options"></div>
+                </div>
+            </section>
+
+            <!-- Zone de feedback et d'explication -->
+            <section id="feedback-section" class="feedback-section hidden">
+                <div class="feedback-container">
+                    <div id="feedback-message" class="feedback-message"></div>
+                    <button id="continue-btn" class="btn btn-primary">
+                        Continuer
+                    </button>
+                </div>
+            </section>
+
+            <!-- Zone de progression -->
+            <section id="progress-section" class="progress-section">
+                <div class="progress-info">
+                    <span class="progress-text">
+                        <span id="errors-found">0</span> erreur(s) trouvée(s) sur 
+                        <span id="total-errors">0</span>
+                    </span>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modale d'analyse -->
+        <div id="modal-analyse" class="modal-overlay hidden" role="status" aria-live="polite" aria-labelledby="modal-analyse-titre">
+            <div class="modal-felicitations modal-analyse">
+                <h2 id="modal-analyse-titre" class="modal-felicitations-titre">Analyse en cours</h2>
+                <p id="modal-analyse-texte" class="modal-felicitations-texte">Abe analyse la phrase…</p>
+                <div class="analyse-progress-bar">
+                    <div id="analyse-progress-fill" class="analyse-progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modale de félicitations -->
+        <div id="modal-felicitations" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-felicitations-titre">
+            <div class="modal-felicitations">
+                <div class="modal-felicitations-icon">🎉</div>
+                <h2 id="modal-felicitations-titre" class="modal-felicitations-titre">Bravo !</h2>
+                <p class="modal-felicitations-texte">Tu as réussi à corriger les fautes que tu avais faites. Souviens-toi de ce que tu viens de voir pour améliorer ton niveau !</p>
+                <div id="modal-felicitations-stats" class="modal-felicitations-stats hidden"></div>
+                <button id="modal-felicitations-btn" class="btn btn-primary">Continuer</button>
+            </div>
+        </div>
+
+        <!-- Modale de confirmation de réinitialisation -->
+        <div id="modal-reinitialisation" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-reinitialisation-titre">
+            <div class="modal-felicitations modal-confirmation">
+                <h2 id="modal-reinitialisation-titre" class="modal-felicitations-titre">Confirmer</h2>
+                <p id="modal-reinitialisation-texte" class="modal-felicitations-texte">Il reste des erreurs non corrigées. Veux-tu vraiment recommencer ?</p>
+                <div class="modal-actions">
+                    <button id="modal-reinitialisation-annuler-btn" class="btn btn-secondary">Annuler</button>
+                    <button id="modal-reinitialisation-confirmer-btn" class="btn btn-primary">Recommencer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modale de verrouillage du mode oral -->
+        <div id="modal-phrase-orale" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-phrase-orale-titre">
+            <div class="modal-felicitations modal-confirmation">
+                <h2 id="modal-phrase-orale-titre" class="modal-felicitations-titre">Phrase non attendue</h2>
+                <p id="modal-phrase-orale-texte" class="modal-felicitations-texte">La phrase entrée ne correspond pas à la phrase dictée. Réécoute la dictée puis réessaie.</p>
+                <div class="modal-actions">
+                    <button id="modal-phrase-orale-fermer-btn" class="btn btn-primary">J'ai compris</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modale d'avertissement écran réduit / mobile -->
+        <div id="modal-mobile-block" class="modal-overlay modal-overlay-blocking hidden" role="alertdialog" aria-modal="true" aria-labelledby="modal-mobile-block-titre">
+            <div class="modal-felicitations modal-confirmation">
+                <h2 id="modal-mobile-block-titre" class="modal-felicitations-titre">📱 Clavier physique recommandé</h2>
+                <p class="modal-felicitations-texte">L'utilisation d'Abe est conçue pour un écran avec clavier physique pour désactiver les correcteurs automatiques.</p>
+                <div class="modal-actions">
+                    <button id="modal-mobile-block-dismiss-btn" class="btn btn-primary">Continuer sur cet écran</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">
+                💚 Abe t'aide à progresser en français
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="src/analyseur/categories/coherence.js"></script>
+    <script src="src/analyseur/categories/lexique.js"></script>
+    <script src="src/analyseur/categories/determinant-chaque.js"></script>
+    <script src="src/analyseur/categories/pluriels-x.js"></script>
+    <script src="src/analyseur/categories/structure.js"></script>
+    <script src="src/analyseur/categories/accords.js"></script>
+    <script src="src/analyseur/categories/verbes.js"></script>
+    <script src="src/homophones/rules-pass-1.js"></script>
+    <script src="src/homophones/rules-pass-2.js"></script>
+    <script src="src/homophones/rules-pass-3.js"></script>
+    <script src="src/homophones/rules-pass-4.js"></script>
+    <script src="src/homophones/rules-pass-5.js"></script>
+    <script src="src/analyseur/categories/homophones.js"></script>
+    <script src="src/analyseur/categories/pedagogie.js"></script>
+    <script src="src/analyseur/categories/oral-accent.js"></script>
+    <script src="src/analyseur/categories/oral-homophones.js"></script>
+    <script src="src/analyseur/categories/oral-conjugaison.js"></script>
+    <script src="src/analyseur/categories/oral-lettres.js"></script>
+    <script src="src/analyseur/categories/oral-leur-leurs.js"></script>
+    <script src="src/analyseur/categories/oral-nature.js"></script>
+    <script src="src/analyseur/categories/oral-regles.js"></script>
+    <script src="src/analyseur/categories/oral-jeu-invariable.js"></script>
+    <script src="src/analyseur/categories/oral-definitions.js"></script>
+    <script src="src/analyseur/normalization-utils.js"></script>
+    <script src="src/analyseur/context-utils.js"></script>
+    <script src="src/analyseur/lexical-corrections.js"></script>
+    <script src="src/analyseur/analyseur-core-methods-part-1.js"></script>
+    <script src="src/analyseur/analyseur-core-methods-part-2.js"></script>
+    <script src="src/analyseur/analyseur-core-methods-part-3.js"></script>
+    <script src="src/analyseur/analyseur-core-methods-part-4.js"></script>
+    <script src="analyseur.js"></script>
+    <script src="oral/speech-utils.js"></script>
+    <script src="src/main/oral-alignment.js"></script>
+    <script src="src/main/oral-reference-filter.js"></script>
+    <script src="src/main/tiles-renderer.js"></script>
+    <script src="src/main/correction-workflow.js"></script>
+    <script src="src/main/ui-modals.js"></script>
+    <script src="src/main/app-state.js"></script>
+    <script src="src/main/feedback-reset.js"></script>
+    <script src="src/main/oral-pedagogy.js"></script>
+    <script src="src/main/oral-guided-content.js"></script>
+    <script src="src/main/interaction-guidance.js"></script>
+    <script src="src/main/bootstrap.js"></script>
+    <script src="main.js"></script>
+    <script src="corpus/corpus-oral.js"></script>
+    <script src="oral/oral-player.js"></script>
+</body>
+</html>

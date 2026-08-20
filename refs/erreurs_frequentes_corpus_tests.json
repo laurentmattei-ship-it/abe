@@ -1,0 +1,430 @@
+{
+  "source": "Corpus utilisateur Abe - motifs de non-regression",
+  "fautesLexicales": [],
+  "motifs": [
+    {
+      "contexte": ["au", "marcher"],
+      "cible": 1,
+      "type": "accent_lexical",
+      "correction": "marché",
+      "regle": "Un nom comme marché prend un accent aigu.",
+      "explication": "Après \"au\", on attend ici le nom \"marché\"."
+    },
+    {
+      "contexte": ["les", "enfant", "de", "la", "classe", "travaille"],
+      "cible": 5,
+      "type": "accord_sujet_verbe",
+      "correction": "travaillent",
+      "regle": "Le verbe s'accorde avec le sujet réel, même s'il est éloigné.",
+      "explication": "Le sujet est \"enfant\" au pluriel dans ce groupe."
+    },
+    {
+      "contexte": ["rien", "n'y", "personne"],
+      "cible": 1,
+      "type": "homophone_ni_ny",
+      "correction": "ni",
+      "regle": "Avec deux éléments négatifs coordonnés, on écrit \"ni\".",
+      "explication": "On écrit \"rien ni personne\"."
+    },
+    {
+      "contexte": ["beaucoup", "des", "eleves"],
+      "cible": 1,
+      "type": "accord_determinant_nom",
+      "correction": "d'",
+      "regle": "Après \"beaucoup\", on emploie \"de\" (ou d' devant voyelle).",
+      "explication": "La forme attendue est \"beaucoup d'élèves\"."
+    },
+    {
+      "contexte": ["enfant", "joue", "dehors", "et", "crie"],
+      "cible": 1,
+      "type": "accord_sujet_verbe",
+      "correction": "jouent",
+      "regle": "Avec un sujet pluriel, le verbe se met au pluriel.",
+      "explication": "Le sujet \"enfant\" est attendu au pluriel dans cette phrase."
+    },
+    {
+      "contexte": ["elle", "c'est", "perdu"],
+      "cible": 1,
+      "type": "homophone_cest_sest",
+      "correction": "s'est",
+      "regle": "Avec un verbe pronominal, on écrit \"s'est\".",
+      "explication": "Ici, il s'agit du verbe se perdre."
+    },
+    {
+      "contexte": ["arbre", "perde", "leur", "feuilles"],
+      "cible": 1,
+      "type": "accord_sujet_verbe",
+      "correction": "perdent",
+      "regle": "Le verbe s'accorde avec le sujet.",
+      "explication": "Le sujet est pluriel."
+    },
+    {
+      "contexte": ["eleve", "ecrit", "une", "phrase"],
+      "cible": 1,
+      "type": "accord_sujet_verbe",
+      "correction": "écrivent",
+      "regle": "Le verbe s'accorde avec le sujet.",
+      "explication": "Le sujet attendu est pluriel."
+    },
+    {
+      "contexte": ["ont", "finis", "leurs", "devoir"],
+      "cible": 1,
+      "type": "verbe_participe_requis",
+      "correction": "fini",
+      "regle": "Avec avoir, le participe passé reste invariable si le COD est après.",
+      "explication": "On écrit \"ils ont fini leurs devoirs\"."
+    },
+    {
+      "contexte": ["mes", "copain"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "copains",
+      "regle": "Le nom s'accorde avec le déterminant pluriel.",
+      "explication": "\"Mes\" impose le pluriel."
+    },
+    {
+      "contexte": ["gens", "il", "dise"],
+      "cible": 2,
+      "type": "accord_sujet_verbe",
+      "correction": "disent",
+      "regle": "Le verbe s'accorde avec le sujet pluriel.",
+      "explication": "On écrit \"les gens disent\"."
+    },
+    {
+      "contexte": ["se", "que", "tu", "a", "dit"],
+      "cible": 0,
+      "type": "homophone_se_ce",
+      "correction": "ce",
+      "regle": "Dans \"ce que\", on écrit \"ce\" déterminant/pronom démonstratif.",
+      "explication": "Ici, la tournure correcte est \"ce que\"."
+    },
+    {
+      "contexte": ["a", "marcher", "longtemps"],
+      "cible": 1,
+      "type": "verbe_participe_requis",
+      "correction": "marché",
+      "regle": "Après l'auxiliaire avoir, on emploie le participe passé.",
+      "explication": "On écrit \"a marché\"."
+    },
+    {
+      "contexte": ["les", "film", "qui", "font"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "films",
+      "regle": "Le nom s'accorde avec le déterminant pluriel.",
+      "explication": "\"Les\" impose \"films\"."
+    },
+    {
+      "contexte": ["a", "casser", "mon", "telephone"],
+      "cible": 1,
+      "type": "verbe_participe_requis",
+      "correction": "cassé",
+      "regle": "Après l'auxiliaire avoir, on emploie le participe passé.",
+      "explication": "On écrit \"a cassé\"."
+    },
+    {
+      "contexte": ["aller", "cher", "lui"],
+      "cible": 1,
+      "type": "mot_inconnu",
+      "correction": "chez",
+      "regle": "La préposition de lieu correcte est \"chez\".",
+      "explication": "On écrit \"aller chez lui\"."
+    },
+    {
+      "contexte": ["y", "a", "plein"],
+      "cible": 0,
+      "type": "oralite_familiere",
+      "correction": "il",
+      "regle": "À l'écrit soigné, on écrit \"il y a\".",
+      "explication": "\"Y a\" est une forme orale."
+    },
+    {
+      "contexte": ["que", "je", "part"],
+      "cible": 2,
+      "type": "conjugaison_verbe",
+      "correction": "parte",
+      "regle": "Après \"que je\" ici, on emploie le subjonctif.",
+      "explication": "La forme attendue est \"parte\"."
+    },
+    {
+      "contexte": ["est", "flou"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "floue",
+      "regle": "L'adjectif s'accorde avec le nom féminin singulier.",
+      "explication": "\"Photo\" est féminin."
+    },
+    {
+      "contexte": ["on", "c'est", "ennuyer"],
+      "cible": 1,
+      "type": "homophone_cest_sest",
+      "correction": "s'est",
+      "regle": "Avec un verbe pronominal, on écrit \"s'est\".",
+      "explication": "Il faut \"on s'est ennuyés\"."
+    },
+    {
+      "contexte": ["mis", "c'est", "chaussure"],
+      "cible": 1,
+      "type": "homophone_ses_cest",
+      "correction": "ses",
+      "regle": "Devant un nom pluriel possédé, on écrit \"ses\".",
+      "explication": "On écrit \"ses chaussures\"."
+    },
+    {
+      "contexte": ["qu'il", "viendrais", "mais"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "viendrait",
+      "regle": "Au conditionnel présent, 3e personne singulier : -ait.",
+      "explication": "On écrit \"il viendrait\"."
+    },
+    {
+      "contexte": ["mes", "cle", "je"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "clés",
+      "regle": "Le nom s'accorde avec le déterminant pluriel.",
+      "explication": "\"Mes\" impose le pluriel."
+    },
+    {
+      "contexte": ["elle", "c'est", "tromper"],
+      "cible": 1,
+      "type": "homophone_cest_sest",
+      "correction": "s'est",
+      "regle": "Avec un verbe pronominal, on écrit \"s'est\".",
+      "explication": "Il faut \"elle s'est trompée\"."
+    },
+    {
+      "contexte": ["cour", "et", "il", "crie"],
+      "cible": 2,
+      "type": "homophone_on_ont",
+      "correction": "ils",
+      "regle": "Le pronom sujet pluriel est \"ils\".",
+      "explication": "Le verbe qui suit est au pluriel attendu."
+    },
+    {
+      "contexte": ["que", "tu", "fait", "tes"],
+      "cible": 2,
+      "type": "conjugaison_verbe",
+      "correction": "fasses",
+      "regle": "Après \"il faut que\", on emploie le subjonctif.",
+      "explication": "La forme attendue est \"fasses\"."
+    },
+    {
+      "contexte": ["a", "etais", "voir"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "été",
+      "regle": "Avec avoir, le participe passé de être est \"été\".",
+      "explication": "On écrit \"a été voir\"."
+    },
+    {
+      "contexte": ["j'ai", "demander", "a", "la", "prof"],
+      "cible": 1,
+      "type": "verbe_participe_requis",
+      "correction": "demandé",
+      "regle": "Après l'auxiliaire avoir, on emploie le participe passé.",
+      "explication": "On écrit \"j'ai demandé\"."
+    },
+    {
+      "contexte": ["les", "exercice", "etait", "trop", "dur"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "exercices",
+      "regle": "Le nom s'accorde avec le déterminant pluriel.",
+      "explication": "\"Les\" impose \"exercices\"."
+    },
+    {
+      "contexte": ["faisait", "froit"],
+      "cible": 1,
+      "type": "mot_inconnu",
+      "correction": "froid",
+      "regle": "L'adjectif correct est \"froid\".",
+      "explication": "Il s'agit d'une erreur d'orthographe lexicale."
+    },
+    {
+      "contexte": ["un", "gateau", "et"],
+      "cible": 1,
+      "type": "accent_lexical",
+      "correction": "gâteau",
+      "regle": "Le mot \"gâteau\" prend un accent circonflexe.",
+      "explication": "Orthographe usuelle du mot."
+    },
+    {
+      "contexte": ["elle", "la", "partager"],
+      "cible": 1,
+      "type": "homophone_la_lapostrophe",
+      "correction": "l'a",
+      "regle": "Quand il s'agit de pronom + avoir, on écrit \"l'a\".",
+      "explication": "On écrit \"elle l'a partagé\"."
+    },
+    {
+      "contexte": ["les", "eleve", "travail", "en", "groupe"],
+      "cible": 2,
+      "type": "accord_sujet_verbe",
+      "correction": "travaillent",
+      "regle": "Le verbe s'accorde avec le sujet pluriel.",
+      "explication": "Le sujet attendu est pluriel."
+    },
+    {
+      "contexte": ["les", "prof", "ils", "donnent"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "profs",
+      "regle": "Le nom au pluriel prend ici la marque -s.",
+      "explication": "On écrit \"les profs\"."
+    },
+    {
+      "contexte": ["de", "devoir"],
+      "cible": 1,
+      "type": "accord_nom_nombre",
+      "correction": "devoirs",
+      "regle": "Le nom doit s'accorder selon le sens pluriel de la phrase.",
+      "explication": "Ici, on parle de plusieurs devoirs."
+    },
+    {
+      "contexte": ["pas", "trouver", "la", "reponse"],
+      "cible": 1,
+      "type": "verbe_participe_requis",
+      "correction": "trouvé",
+      "regle": "Après l'auxiliaire avoir, on emploie le participe passé.",
+      "explication": "On écrit \"je n'ai pas trouvé\"."
+    },
+    {
+      "contexte": ["il", "marcher", "pas"],
+      "cible": 1,
+      "type": "conjugaison_verbe",
+      "correction": "marchait",
+      "regle": "Dans ce contexte au passé, on emploie l'imparfait.",
+      "explication": "On écrit \"il ne marchait pas\"."
+    },
+    {
+      "contexte": ["rien", "n'", "y", "personne"],
+      "cible": 1,
+      "type": "homophone_ni_ny",
+      "correction": "ni",
+      "regle": "Avec deux éléments négatifs coordonnés, on écrit \"ni\".",
+      "explication": "On écrit \"rien ni personne\"."
+    },
+    {
+      "contexte": ["qu'", "il", "viendrais", "mais"],
+      "cible": 2,
+      "type": "conjugaison_verbe",
+      "correction": "viendrait",
+      "regle": "Au conditionnel présent, 3e personne singulier : -ait.",
+      "explication": "On écrit \"il viendrait\"."
+    },
+    {
+      "contexte": ["est", "partit"],
+      "cible": 1,
+      "type": "verbe_participe_requis",
+      "correction": "partie",
+      "regle": "Avec l'auxiliaire être et un sujet féminin singulier, le participe s'accorde.",
+      "explication": "On écrit \"elle est partie\"."
+    },
+    {
+      "contexte": ["ai", "reussit"],
+      "cible": 1,
+      "type": "verbe_participe_requis",
+      "correction": "réussi",
+      "regle": "Après avoir, on écrit le participe passé.",
+      "explication": "On écrit \"j'ai réussi\"."
+    },
+    {
+      "contexte": ["une", "vieux", "dame"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "vieille",
+      "regle": "L'adjectif s'accorde avec un nom féminin singulier.",
+      "explication": "On écrit \"une vieille dame\"."
+    },
+    {
+      "contexte": ["fleurs", "odorant"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "odorantes",
+      "regle": "L'adjectif s'accorde avec le nom féminin pluriel.",
+      "explication": "On écrit \"des fleurs odorantes\"."
+    },
+    {
+      "contexte": ["valise", "lourd"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "lourde",
+      "regle": "L'adjectif s'accorde avec un nom féminin singulier.",
+      "explication": "On écrit \"une valise lourde\"."
+    },
+    {
+      "contexte": ["filles", "sportif"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "sportives",
+      "regle": "L'adjectif s'accorde avec le nom féminin pluriel.",
+      "explication": "On écrit \"des filles sportives\"."
+    },
+    {
+      "contexte": ["chaussures", "neuf"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "neuves",
+      "regle": "L'adjectif s'accorde avec le nom féminin pluriel.",
+      "explication": "On écrit \"des chaussures neuves\"."
+    },
+    {
+      "contexte": ["porte", "ouvert"],
+      "cible": 1,
+      "type": "accord_adjectif_nom",
+      "correction": "ouverte",
+      "regle": "L'adjectif s'accorde avec un nom féminin singulier.",
+      "explication": "On écrit \"une porte ouverte\"."
+    },
+    {
+      "contexte": ["faut", "que", "tu", "vient"],
+      "cible": 3,
+      "type": "conjugaison_verbe",
+      "correction": "viennes",
+      "regle": "Après \"il faut que\", on emploie le subjonctif.",
+      "explication": "La forme attendue est \"viennes\"."
+    },
+    {
+      "contexte": ["veux", "qu'il", "fait"],
+      "cible": 2,
+      "type": "conjugaison_verbe",
+      "correction": "fasse",
+      "regle": "Après un verbe de volonté suivi de que, on emploie le subjonctif.",
+      "explication": "La forme attendue est \"fasse\"."
+    },
+    {
+      "contexte": ["veux", "qu'", "il", "fait"],
+      "cible": 3,
+      "type": "conjugaison_verbe",
+      "correction": "fasse",
+      "regle": "Après un verbe de volonté suivi de que, on emploie le subjonctif.",
+      "explication": "La forme attendue est \"fasse\"."
+    },
+    {
+      "contexte": ["peur", "qu'il", "part"],
+      "cible": 2,
+      "type": "conjugaison_verbe",
+      "correction": "parte",
+      "regle": "Après \"avoir peur que\", on emploie le subjonctif.",
+      "explication": "La forme attendue est \"parte\"."
+    },
+    {
+      "contexte": ["peur", "qu'", "il", "part"],
+      "cible": 3,
+      "type": "conjugaison_verbe",
+      "correction": "parte",
+      "regle": "Après \"avoir peur que\", on emploie le subjonctif.",
+      "explication": "La forme attendue est \"parte\"."
+    },
+    {
+      "contexte": ["attend", "que", "tu", "finis"],
+      "cible": 3,
+      "type": "conjugaison_verbe",
+      "correction": "finisses",
+      "regle": "Après \"attendre que\", on emploie le subjonctif.",
+      "explication": "La forme attendue est \"finisses\"."
+    }
+  ]
+}

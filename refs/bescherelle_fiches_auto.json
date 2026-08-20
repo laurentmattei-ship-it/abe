@@ -1,0 +1,1234 @@
+{
+  "version": 2,
+  "source": "Extraction PDF intégrale + fusion fiches existantes",
+  "fichesParType": {
+    "accord_sujet_verbe": {
+      "titreAide": "Accord sujet-verbe",
+      "memo": "Repère Bescherelle: le verbe s'accorde toujours avec son sujet.",
+      "regle": "Pour trouver la bonne forme verbale, repère d'abord le sujet (qui est-ce qui ?), puis choisis la terminaison qui correspond à la personne et au nombre.",
+      "exemples": [
+        "Le chat mange. / Les chats mangent.",
+        "Tu finis. / Ils finissent.",
+        "Ma sœur et moi partons.",
+        "Bescherelle La grammaire pour tous.pdf p.146: 144 Deux Pigeons s’aimaient d’amour tendre. L’un d’eux s’ennuyant au logis Fut assez fou pour entreprendre Un voyage en lointain pays. Jean de La Fontaine, Les deux Pigeons. Dans ces quatre vers, deux verbes sont à un mode impersonnel et ne sont pas conjugués…",
+        "Bescherelle Lorthographe pour tous.pdf p.233: 231 GRAMMAIRE & ORTHOGRAPHE 340 à 341 L’accord du verbe LES RÈGLES GÉNÉRALES Le verbe a un seul sujet Le verbe s’accorde avec son sujet ❚ Aux temps simples, le verbe s’accorde en personne (1re, 2e ou 3e personne) et en nombre (singulier ou pluriel) avec le su…",
+        "bescherelle la conjugaison pour tous.pdf p.111: QU'EST - CE QU'UN VERBE? LES SIX CATÉGORIES VERBALES la conj ugaison permet de dOrl:1er des indications sur d i~fér entes notions : la person ne, le nombre, le ter.lps et l'aspect , le mode, la voix. Ces notions reçoive nt le nom de ca:égorie s verbales. Elle…",
+        "bescherelle la conjugaison pour tous.pdf p.131: LA SYNTAXE DU VERBE Il Ces t:rois catégories morphologiques possédées par le nom garçon se communiquent aux éléments de la phrase qui entrent en relation avec lui. L'article le et l'adjectif petit prennent les marques des deux catégories du genre masculin et…",
+        "bescherelle la conjugaison pour tous.pdf p.131: tions de conju8aison. 2e pers. sing. 2e per< o si ng. Nous adorons la ryntaxe. ,re pers. pl. \" e pers. pl. Vous aveL - - horreur de la morpho108ie. 2e pers . pl. 2e pers. pl. Tous les autres types de sujet (nom commun introduit par un dèterminant , nom propre…",
+        "bescherelle la conjugaison pour tous.pdf p.132: • Accord en nombre Pour le nombre, le sujet au singulier détermine l'accord au singulier, le sujet au pluriel l'accord au pluriel : bqjJrammaire est vraiment passionnante. sujet sing ulier verbe singulier Les élèves travaillent. sujet plu riel ve rbe plurie l…",
+        "bescherelle la conjugaison pour tous.pdf p.135: REM LA SYNTAXE DU VERBE 121- La plupart, même avec un com plément au pluriel, garde la possib ilité de l'accord au singulier: La plupar t des élèves travaillent ou travaille, - Bizarrement. plus d'un exige l'accord au singulier, et mOllls de deux le pluriel :…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 146,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p146-c288"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 233,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p233-c391"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 111,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p111-c240"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 131,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p131-c282"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 131,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p131-c283"
+        }
+      ]
+    },
+    "conjugaison_verbe": {
+      "titreAide": "Conjugaison du verbe",
+      "memo": "Repère Bescherelle: je/tu/il n'ont pas la même terminaison.",
+      "regle": "Vérifie la personne du sujet: je et tu prennent souvent -s; il/elle/on prend souvent -t ou -e selon le verbe.",
+      "exemples": [
+        "Tu vas, il va.",
+        "Je prends, il prend.",
+        "Tu fais, elle fait.",
+        "bescherelle la conjugaison pour tous.pdf p.27: RONDIF P, esent en appr éciant PaSSE aic ayo ns ayez Pass;, appr écié apprécié apprécié- avoÎl- appréci é Passé dppl-écil> ayant apprécié P ~sse cn a yant appr écié Cond Itionnel passé 2' forme ' mèmes formes que le plus-Que-par faic du subjonct if • Forme su…",
+        "Bescherelle Lorthographe pour tous.pdf p.120: 118 Comprendre la conjugaison LES NOTIONS DE BASE Radical et terminaisons ❚ Une forme verbale présente toujours deux parties : le radical qui porte le sens du verbe et la terminaison qui indique la personne (1 re, 2e ou 3e personne), le nombre (singulier ou p…",
+        "Bescherelle Lorthographe pour tous.pdf p.129: 127 CONJUGAISON & ORTHOGRAPHE Comprendre la conjugaison 183 à 186 Avec ou sans i : -yons ou -yions, -ions ou -iions, -gnons ou -gnions ? ❚ Si l’on observe les tableaux ➜ 177 et 178, on remarque que les terminaisons de l’imparfait de l’indicatif et du subjonct…",
+        "Bescherelle Lorthographe pour tous.pdf p.132: 130 COMMENT CONJUGUER UN VERBE ? Les paragraphes qui suivent montrent que dans la plupart des cas : – il suffit de connaître quelques formes de la conjugaison d’un verbe pour reconstituer toute cette conjugaison ; – il suffit de connaître les terminaisons sel…",
+        "Bescherelle Lorthographe pour tous.pdf p.140: 138 LES VERBES QUI SE TERMINENT PAR ER Les verbes en -er sont les plus nombreux. Ils sont réguliers et définissent les verbes du 1er groupe. Deux verbes, les verbes aller et envoyer, sont des verbes irréguliers souvent classés dans le 3e groupe. Les verbes en…",
+        "Bescherelle Lorthographe pour tous.pdf p.141: 139 CONJUGAISON & ORTHOGRAPHE Les verbes qui se terminent par er 196 à 198 Les verbes en -ger, -cer, -guer ❚ Les verbes en -ger prennent un e devant un a ou un o, afin de conserver la prononciation [j] du g. changer → changeant change → changeons ❚ Les verbes…",
+        "Bescherelle Lorthographe pour tous.pdf p.145: 143 CONJUGAISON & ORTHOGRAPHE Les verbes qui se terminent par er 202 à 204 Les verbes en -yer Il s’agit des verbes en -ayer, -oyer et -uyer. Devant le e muet de certaines terminaisons, les verbes en -ayer comme payer peuvent se conjuguer de deux façons : avec…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 27,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p27-c56"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 120,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p120-c207"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 129,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p129-c223"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 132,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p132-c229"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 140,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p140-c241"
+        }
+      ]
+    },
+    "verbe_participe_requis": {
+      "titreAide": "Participe passé requis",
+      "memo": "Repère Bescherelle: après un auxiliaire de temps, on attend un participe passé.",
+      "regle": "Après avoir/être au passé composé, on écrit un participe passé (et non un infinitif). Avec être, on accorde souvent le participe avec le sujet.",
+      "exemples": [
+        "Tu as oublié.",
+        "Ils sont allés.",
+        "Elle s'est levée.",
+        "bescherelle la conjugaison pour tous.pdf p.141: REM LA SYNTAXE OU VERBE lB 1 - Ils s'accordent aussi quand, même antéposés, ils sont considérés comme des attributs du nom. Vous trouverez ci-joint f un e photo copie de mon chèque. Accord du partic ipe passé employé avec être: règle générale Employé avec l'a…",
+        "bescherelle la conjugaison pour tous.pdf p.175: Gérondif Affixes analyse d'un exe mple 102 défll1ition 103 jamais en positio n finale 110 verbe du 3e groupe fréquenc e d'emploi accord acco rd du particIpe passé employé avec le verbe être ----+ PortiCIpe passe Faire semi-auxill ai.-e accord du parti cipe pa…",
+        "bescherelle la conjugaison pour tous.pdf p.176: valeurs et temps valeurs en indépendante ou principale emploi en subordonnée complétive emploi en subordonnée relative 14 1 emploi en subordonnee circonstancielle 165 Temps 13 1 définition 132 choix des temps du subjonctif 133 choix des temps de l'infinitif 1…",
+        "bescherelle la conjugaison pour tous.pdf p.177: • Abréviations utilisées afro : africain belg. : belge cond ; : conditionnel D : verbe défectif f : intransitif imp. : ve\"be impersonnel impft. : imparfait ind. : indicatif ,nf. : infinitif P : construction pronominale du verbe p. p. : participe passé pan. :…",
+        "Bescherelle La grammaire pour tous.pdf p.96: 94 Tableau récapitulatif des formes pronominales • Le tableau suivant regroupe les différentes formes pronominales. FORME PRONOMINALE EXEMPLE PRONOM RÉFLÉCHI Verbe pronominal Verbe essentiellement pronominal Il s’enfuit. inanalysable Verbe pronominal autonome…",
+        "Bescherelle La grammaire pour tous.pdf p.152: ont tombées au pied de l’arbre. voix active Les arbres ont été déracinés par la tempête. voix passive • Il faut cependant faire attention aux formes pronominles . Le participe passé d’une forme pronominale, pourtant employée avec l’auxiliaire être , ne s’acco…",
+        "Bescherelle La grammaire pour tous.pdf p.153: 151 201 à 205 LE VERBE ET LE GROUPE VERBAL L’accord du participe passé employé avec l’auxiliaire avoir quand le COD est le ou l’ • Le COD placé avant le participe passé peut être un pronom personnel . Cette commode, il l’a trouvée chez un brocanteur. Le parti…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 141,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p141-c302"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 175,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p175-c371"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 176,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p176-c374"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 177,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p177-c376"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 96,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p96-c186"
+        }
+      ]
+    },
+    "verbe_infinitif_requis": {
+      "titreAide": "Infinitif requis",
+      "memo": "Repère Bescherelle: après aller/pouvoir/vouloir/devoir, le 2e verbe reste à l'infinitif.",
+      "regle": "Si le premier verbe est un semi-auxiliaire (aller, pouvoir, devoir, vouloir), le verbe suivant reste à l'infinitif.",
+      "exemples": [
+        "Je vais manger.",
+        "Tu peux venir.",
+        "Nous devons partir.",
+        "bescherelle la conjugaison pour tous.pdf p.124: ':lste ntact à l:o ... tes 'es ·;cr-r.es :le 'a :oi1 j \"ga , s..:; ,~ , rr.a:.3 r~ ' ;o;t .1 .: ~I ... ta;i\"es fermes ..an {( '~ ! at5; Ssement )} :le \\';oi:ïie -S5-: je :14':;-. il firri-t. il fini-r-a, ils (ini-rent, r.a;s nous (ir:i-S5-0ns, ils f.r;i-s5-ai…",
+        "bescherelle la conjugaison pour tous.pdf p.124: t .ous ,es autres verbes tenviron 370) . - le verbe aller, avec son infinitif en' -er ; - tab leau 23 - Les verbes à infinitif en -ir sans élargissement : courir, nous cour-ons. ils cour-aient. ils ::our-r-ont (ou le deux ième -r- ne fait Jas .:>artle :lu rad…",
+        "Bescherelle La grammaire pour tous.pdf p.104: 102 J’aime chanter sous la douche. Vous aimez chanter sous la douche. Un orage ayant éclaté, ils se sont réfugiés dans le métro. Il marche en chantant. Nous marchons en chantant. Chanter , ayant éclaté et en chantant sont des formes verbales qui ne portent pa…",
+        "Bescherelle Lorthographe pour tous.pdf p.125: 123 CONJUGAISON & ORTHOGRAPHE Comprendre la conjugaison 178 à 179 Les terminaisons des modes impersonnels : infinitif et participes La connaissance des trois formes impersonnelles du verbe – infinitif, parti- cipe présent et participe passé – aide très souven…",
+        "Bescherelle La grammaire pour tous.pdf p.92: 90 114 • Le classement traditionnel des verbes se fait en trois groupes : – le premier groupe réunit les verbes qui ont un infi nitif en -er , sauf le verbe irrégulier aller , qui appartient au troisième groupe ; – le deuxième groupe réunit les verbes qui ont…",
+        "Bescherelle La grammaire pour tous.pdf p.131: 129 162 à 163 LE VERBE ET LE GROUPE VERBAL LE PASSÉ SIMPLE Les terminaisons du passé simple GROUPE TERMINAISONS EXEMPLES Premier groupe -ai, -as, -a, -âmes, -âtes, -èrent j’expliquai, tu expliquas, il expliqua, nous expliquâmes, vous expliquâtes, ils expliquè…",
+        "Bescherelle Lorthographe pour tous.pdf p.9: arfait ? 184 -e ou -es à l’impératif ? 185 -e ou -t au subjonctif ? 186 Avec ou sans i : -yons ou -yions, -ions ou -iions ? 187 Avec ou sans accent circonflexe : vint ou vînt ? 188-191 Conjuguer aux temps simples et aux temps composés Les conjugaisons 192 Tab…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 124,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p124-c266"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 124,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p124-c267"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 104,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p104-c203"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 125,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p125-c216"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 92,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p92-c177"
+        }
+      ]
+    },
+    "homophone_a_a_grave": {
+      "titreAide": "a ou à",
+      "memo": "Repère Bescherelle: remplace par 'avait'.",
+      "regle": "Si la phrase reste correcte avec 'avait', c'est le verbe avoir: a. Sinon, c'est la préposition à.",
+      "exemples": [
+        "Il a faim.",
+        "Il va à l'école.",
+        "Il a parlé à sa sœur.",
+        "Bescherelle La grammaire pour tous.pdf p.45: 43 48 à 49 LES PRINCIPALES FONCTIONS ❚ La nature du complément circonstanciel de concession • Le complément circonstanciel de concession peut avoir les natures suivantes. NATURE DU CC DE CONCESSION EXEMPLE Groupe prépositionnel Ils sont sortis en mer malgré l…",
+        "Bescherelle La grammaire pour tous.pdf p.88: 86 Les constructions absolues détachées • Une construction absolue du type les mains dans les poches, la tête basse , peut aussi apparaître en position détachée dans un groupe nominal. Les mains dans les poches, Jacques est entré en souriant dans la pièce. La…",
+        "Bescherelle Lorthographe pour tous.pdf p.109: Il avait faim. Il a travaillé. → Il avait travaillé*. * Si un verbe suit, il est au participe passé. ❚ On écrit a dans les locutions latines : a contrario, a priori, a posteriori. ❚ On écrit à avec un accent dans les autres cas. Il s’agit d’une préposition qu…",
+        "Bescherelle Lorthographe pour tous.pdf p.245: 243 GRAMMAIRE & ORTHOGRAPHE 362 à 364 L’accord du participe passé LE PARTICIPE PASSÉ EMPLOYÉ SEUL Règle générale ❚ Le participe passé employé sans auxiliaire s’accorde en genre (masculin ou féminin) et en nombre (singulier ou pluriel) avec le nom ou le pronom…",
+        "bescherelle la conjugaison pour tous.pdf p.8: e o o •••••• • • • • • •• ••••••••••••• • • • • • • • r------= . . ~---------- . • • • • • • 19: • • • • • • • • • • IND tcATIF : -- -- ------- -. Présent Passe C(lmpOSe • • envoyer • • • • • 1\" grot~ ( • • • • • • StlBJONCTIF • • Passe . 1 \" ' , ••••••• • ••…",
+        "bescherelle la conjugaison pour tous.pdf p.8: .... ·Jl\\'OVl· , • •••••••••• nou .. L'n\\() \\ iUlls \\'OU,\", (·m.u , jet: il avait nlJU:\" avions vo u..- av icF cnw lyé !.:n\\o,,-e ('>n\\o) é Cm.'()}'l' cn\\'oy(' crwoy(' 'III\\. Il . cn\\' o)a~'l-i()ns ...... \\ ' cnWW:lSSil·.f. , • ..... · n. l.'us~ion:-,. 'l'k v…",
+        "bescherelle la conjugaison pour tous.pdf p.10: 1 1\\ etre INDICATIF SUBJONCTIF Présent Passé compo sé Pré sen t Pass e jl' . , l~ té qoc je ., été SU I!'i J al SO IS que J ale t u es tu a~ été t , OC tu SOIS 4lut\" tu aies fté il es t il a été qu' il soi t qu' il ail ét.· no us '0111111('$ nous avon s été c…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 45,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p45-c83"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 88,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p88-c170"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 109,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p109-c191"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 245,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p245-c414"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 8,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p8-c7"
+        }
+      ]
+    },
+    "homophone_a_a_sans": {
+      "titreAide": "a ou à",
+      "memo": "Repère Bescherelle: remplace par 'avait'.",
+      "regle": "Si on ne peut pas remplacer par 'avait', il s'agit souvent de la préposition à.",
+      "exemples": [
+        "Commencer à lire.",
+        "Parler à quelqu'un.",
+        "Aller à Paris.",
+        "Bescherelle La grammaire pour tous.pdf p.45: 43 48 à 49 LES PRINCIPALES FONCTIONS ❚ La nature du complément circonstanciel de concession • Le complément circonstanciel de concession peut avoir les natures suivantes. NATURE DU CC DE CONCESSION EXEMPLE Groupe prépositionnel Ils sont sortis en mer malgré l…",
+        "Bescherelle La grammaire pour tous.pdf p.88: 86 Les constructions absolues détachées • Une construction absolue du type les mains dans les poches, la tête basse , peut aussi apparaître en position détachée dans un groupe nominal. Les mains dans les poches, Jacques est entré en souriant dans la pièce. La…",
+        "Bescherelle Lorthographe pour tous.pdf p.109: Il avait faim. Il a travaillé. → Il avait travaillé*. * Si un verbe suit, il est au participe passé. ❚ On écrit a dans les locutions latines : a contrario, a priori, a posteriori. ❚ On écrit à avec un accent dans les autres cas. Il s’agit d’une préposition qu…",
+        "Bescherelle Lorthographe pour tous.pdf p.245: 243 GRAMMAIRE & ORTHOGRAPHE 362 à 364 L’accord du participe passé LE PARTICIPE PASSÉ EMPLOYÉ SEUL Règle générale ❚ Le participe passé employé sans auxiliaire s’accorde en genre (masculin ou féminin) et en nombre (singulier ou pluriel) avec le nom ou le pronom…",
+        "bescherelle la conjugaison pour tous.pdf p.8: e o o •••••• • • • • • •• ••••••••••••• • • • • • • • r------= . . ~---------- . • • • • • • 19: • • • • • • • • • • IND tcATIF : -- -- ------- -. Présent Passe C(lmpOSe • • envoyer • • • • • 1\" grot~ ( • • • • • • StlBJONCTIF • • Passe . 1 \" ' , ••••••• • ••…",
+        "bescherelle la conjugaison pour tous.pdf p.8: .... ·Jl\\'OVl· , • •••••••••• nou .. L'n\\() \\ iUlls \\'OU,\", (·m.u , jet: il avait nlJU:\" avions vo u..- av icF cnw lyé !.:n\\o,,-e ('>n\\o) é Cm.'()}'l' cn\\'oy(' crwoy(' 'III\\. Il . cn\\' o)a~'l-i()ns ...... \\ ' cnWW:lSSil·.f. , • ..... · n. l.'us~ion:-,. 'l'k v…",
+        "bescherelle la conjugaison pour tous.pdf p.10: 1 1\\ etre INDICATIF SUBJONCTIF Présent Passé compo sé Pré sen t Pass e jl' . , l~ té qoc je ., été SU I!'i J al SO IS que J ale t u es tu a~ été t , OC tu SOIS 4lut\" tu aies fté il es t il a été qu' il soi t qu' il ail ét.· no us '0111111('$ nous avon s été c…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 45,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p45-c83"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 88,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p88-c170"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 109,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p109-c191"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 245,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p245-c414"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 8,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p8-c7"
+        }
+      ]
+    },
+    "homophone_et_est": {
+      "titreAide": "et ou est",
+      "memo": "Repère Bescherelle: est = verbe être.",
+      "regle": "Utilise est quand tu peux remplacer par 'était'. Utilise et quand tu relies deux mots ou groupes.",
+      "exemples": [
+        "Il est content.",
+        "Paul et Léa.",
+        "Le ciel est bleu.",
+        "Bescherelle La grammaire pour tous.pdf p.21: 19 NOTIONS DE BASE 13 à 18 PHRASE SIMPLE ET PHRASE COMPLEXE La phrase simple • La phrase simple comporte une seule proposition , composée d’un sujet et d’un prédicat. Elle correspond au modèle grammatical de base. La compagnie aérienne a annulé un vol . Il s’…",
+        "Bescherelle La grammaire pour tous.pdf p.76: ime se promener sans but. Sans but est complément circonstanciel du verbe se promener. – quand il se désigne lui-même ; Chien est de genre masculin Chien renvoie au nom lui-même. – dans les locutions verbales ➜ 3 ; avoir tort ; demander pardon – dans les énum…",
+        "Bescherelle La grammaire pour tous.pdf p.221: 219 301 à 303 Les adverbes de liaison • Les adverbes de liaison (également appelés adverbes conjonctifs ) permettent de coordonner deux propositions : ainsi, aussi, en effet, par consé - quent, ensuite, puis, enfin … • Contrairement aux conjonctions de coordi…",
+        "Bescherelle La grammaire pour tous.pdf p.254: 252 GRAMMAIRE ET STYLE Juxtaposition et asyndète L’asyndète est une figure de style qui consiste à supprimer les liens logiques explicites. Elle prend notamment la forme de la juxtaposition des propositions. Elle permet : – de renforcer une opposition ; Les p…",
+        "bescherelle la conjugaison pour tous.pdf p.3: our trouver rapidement les formes de tous les verbes utilisés en français. • 88 tableaux (numérotés de 1 à 88) Ils donnent, pour les 88 verbes retenus comme modèles, l'ensemble des formes simples et composées . L'existence des formes surcomposées est rappelée…",
+        "bescherelle la conjugaison pour tous.pdf p.4: Un index permet de se référer commodément aux notions expliquées dans la grammaire . • La' l'II de la langue française Pour chacun des verbes énumérés à l'infinitif et classés par ordre alphabétique, figurent des indications sur leur construction et la manièr…",
+        "bescherelle la conjugaison pour tous.pdf p.9: ODE D'EMP 01 o Un regroupement des temps simples, d'une part, et composés d'autre part . Leur regroupement permet de mettre en évidence les correspondances entre les différents temps, et de lever certaines ambiguïtés : ainsi, ayant dit apparaît bien comme une…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 21,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p21-c36"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 76,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p76-c144"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 221,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p221-c435"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 254,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p254-c495"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 3,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p3-c3"
+        }
+      ]
+    },
+    "homophone_est_et": {
+      "titreAide": "et ou est",
+      "memo": "Repère Bescherelle: et relie des éléments.",
+      "regle": "Quand il s'agit d'une coordination (X et Y), écris et. Quand c'est le verbe être, écris est.",
+      "exemples": [
+        "Papa et maman.",
+        "Le chien est grand.",
+        "Un livre et un cahier.",
+        "Bescherelle La grammaire pour tous.pdf p.21: 19 NOTIONS DE BASE 13 à 18 PHRASE SIMPLE ET PHRASE COMPLEXE La phrase simple • La phrase simple comporte une seule proposition , composée d’un sujet et d’un prédicat. Elle correspond au modèle grammatical de base. La compagnie aérienne a annulé un vol . Il s’…",
+        "Bescherelle La grammaire pour tous.pdf p.76: ime se promener sans but. Sans but est complément circonstanciel du verbe se promener. – quand il se désigne lui-même ; Chien est de genre masculin Chien renvoie au nom lui-même. – dans les locutions verbales ➜ 3 ; avoir tort ; demander pardon – dans les énum…",
+        "Bescherelle La grammaire pour tous.pdf p.221: 219 301 à 303 Les adverbes de liaison • Les adverbes de liaison (également appelés adverbes conjonctifs ) permettent de coordonner deux propositions : ainsi, aussi, en effet, par consé - quent, ensuite, puis, enfin … • Contrairement aux conjonctions de coordi…",
+        "Bescherelle La grammaire pour tous.pdf p.254: 252 GRAMMAIRE ET STYLE Juxtaposition et asyndète L’asyndète est une figure de style qui consiste à supprimer les liens logiques explicites. Elle prend notamment la forme de la juxtaposition des propositions. Elle permet : – de renforcer une opposition ; Les p…",
+        "bescherelle la conjugaison pour tous.pdf p.3: our trouver rapidement les formes de tous les verbes utilisés en français. • 88 tableaux (numérotés de 1 à 88) Ils donnent, pour les 88 verbes retenus comme modèles, l'ensemble des formes simples et composées . L'existence des formes surcomposées est rappelée…",
+        "bescherelle la conjugaison pour tous.pdf p.4: Un index permet de se référer commodément aux notions expliquées dans la grammaire . • La' l'II de la langue française Pour chacun des verbes énumérés à l'infinitif et classés par ordre alphabétique, figurent des indications sur leur construction et la manièr…",
+        "bescherelle la conjugaison pour tous.pdf p.9: ODE D'EMP 01 o Un regroupement des temps simples, d'une part, et composés d'autre part . Leur regroupement permet de mettre en évidence les correspondances entre les différents temps, et de lever certaines ambiguïtés : ainsi, ayant dit apparaît bien comme une…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 21,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p21-c36"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 76,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p76-c144"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 221,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p221-c435"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 254,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p254-c495"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 3,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p3-c3"
+        }
+      ]
+    },
+    "homophone_on_ont": {
+      "titreAide": "on ou ont",
+      "memo": "Repère Bescherelle: ont = verbe avoir avec ils/elles.",
+      "regle": "On est un pronom sujet singulier. Ont est une forme du verbe avoir au pluriel.",
+      "exemples": [
+        "On mange tôt.",
+        "Ils ont fini.",
+        "Elles ont compris.",
+        "bescherelle la conjugaison pour tous.pdf p.10: s vous eûtes été soyez aye-\" été ils fur en t ils eure nt , , ete Futur simple Futu r antérieur INF I NITIF je ., aurai été s(~ r a l J t u seras tu aura s été Présent Passé il sera il aura été ptrc avoir été n o us serons nou s aurons été vou s serez: vou s…",
+        "bescherelle la conjugaison pour tous.pdf p.39: nt senti t , 3e gro upe sen Ir SUBJONCTIF Présent Passe '111('Je sente que J ale I:jl1c tu sentes qU(' tu aies quO il sente quO il ait Cj uc n . S('l1t ion s que: n. ayons que v. sentiez que v. ayez quO ils sente nt qu' ils aient Imparfait Plus-que-pa rfait q…",
+        "bescherelle la conjugaison pour tous.pdf p.62: ]ûme~ nous eûmes valu , alOI\" ayo ns ,'alu vo us valûtes vous eût es valu yale z ayC7 valu ils val ure nt ils c urent valu Futur simple Futu r antérieu r . , valu INFIN ITI F Je , ,lU cl r~ i J aU I·al tu vau d ras tu aUr as valu Présent Passé il vau d,-a il…",
+        "bescherelle la conjugaison pour tous.pdf p.63: oulu voulu voulu voulu l'oui u voulu vou lu l'ou lu vo ulu • t:impératif veUle, voulons, voulez, n'est d'usage que pour engager quelqu'un à s'armer de volonté: Veux donc, malheureux, et tu seras sauvé, MaIS, pour inviter poliment, on dit: veuille, veuillez, a…",
+        "bescherelle la conjugaison pour tous.pdf p.101: INF INITIF Présen t .T .. HYè PARTICIPE Prése nt GÉRONDIF Présent _ .iarf ~ • Passé aie confit ayons confit ayez confit Passé Passé .. . .Bul ayant connt Passé Conditionnel passé 2' fonne: même/; formes que le plus-q.ue-parfait du ..ubfonctif Forme surcomposé…",
+        "bescherelle la conjugaison pour tous.pdf p.107: QU'EST-CE QU'UN VERBE? - Être est également ['auxiliaire des verbes construits de façon pronominale (-----t paragraphes et ) : Elle ~'est sOÎJJnée, puis elle s'est lavé les mains. Pour l'accord du participe -> paragraphes l' à 1 1 • Emploi de l'auxiliaire avo…",
+        "bescherelle la conjugaison pour tous.pdf p.132: • Accord en nombre Pour le nombre, le sujet au singulier détermine l'accord au singulier, le sujet au pluriel l'accord au pluriel : bqjJrammaire est vraiment passionnante. sujet sing ulier verbe singulier Les élèves travaillent. sujet plu riel ve rbe plurie l…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 10,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p10-c13"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 39,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p39-c84"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 62,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p62-c138"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 63,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p63-c141"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 101,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p101-c224"
+        }
+      ]
+    },
+    "homophone_ont_on": {
+      "titreAide": "on ou ont",
+      "memo": "Repère Bescherelle: on remplace souvent un sujet indéfini.",
+      "regle": "Si le mot joue le rôle de sujet (on + verbe), écris on; s'il s'agit du verbe avoir au pluriel, écris ont.",
+      "exemples": [
+        "On part demain.",
+        "Ils ont gagné.",
+        "On s'appelle ce soir.",
+        "bescherelle la conjugaison pour tous.pdf p.10: s vous eûtes été soyez aye-\" été ils fur en t ils eure nt , , ete Futur simple Futu r antérieur INF I NITIF je ., aurai été s(~ r a l J t u seras tu aura s été Présent Passé il sera il aura été ptrc avoir été n o us serons nou s aurons été vou s serez: vou s…",
+        "bescherelle la conjugaison pour tous.pdf p.39: nt senti t , 3e gro upe sen Ir SUBJONCTIF Présent Passe '111('Je sente que J ale I:jl1c tu sentes qU(' tu aies quO il sente quO il ait Cj uc n . S('l1t ion s que: n. ayons que v. sentiez que v. ayez quO ils sente nt qu' ils aient Imparfait Plus-que-pa rfait q…",
+        "bescherelle la conjugaison pour tous.pdf p.62: ]ûme~ nous eûmes valu , alOI\" ayo ns ,'alu vo us valûtes vous eût es valu yale z ayC7 valu ils val ure nt ils c urent valu Futur simple Futu r antérieu r . , valu INFIN ITI F Je , ,lU cl r~ i J aU I·al tu vau d ras tu aUr as valu Présent Passé il vau d,-a il…",
+        "bescherelle la conjugaison pour tous.pdf p.63: oulu voulu voulu voulu l'oui u voulu vou lu l'ou lu vo ulu • t:impératif veUle, voulons, voulez, n'est d'usage que pour engager quelqu'un à s'armer de volonté: Veux donc, malheureux, et tu seras sauvé, MaIS, pour inviter poliment, on dit: veuille, veuillez, a…",
+        "bescherelle la conjugaison pour tous.pdf p.101: INF INITIF Présen t .T .. HYè PARTICIPE Prése nt GÉRONDIF Présent _ .iarf ~ • Passé aie confit ayons confit ayez confit Passé Passé .. . .Bul ayant connt Passé Conditionnel passé 2' fonne: même/; formes que le plus-q.ue-parfait du ..ubfonctif Forme surcomposé…",
+        "bescherelle la conjugaison pour tous.pdf p.107: QU'EST-CE QU'UN VERBE? - Être est également ['auxiliaire des verbes construits de façon pronominale (-----t paragraphes et ) : Elle ~'est sOÎJJnée, puis elle s'est lavé les mains. Pour l'accord du participe -> paragraphes l' à 1 1 • Emploi de l'auxiliaire avo…",
+        "bescherelle la conjugaison pour tous.pdf p.132: • Accord en nombre Pour le nombre, le sujet au singulier détermine l'accord au singulier, le sujet au pluriel l'accord au pluriel : bqjJrammaire est vraiment passionnante. sujet sing ulier verbe singulier Les élèves travaillent. sujet plu riel ve rbe plurie l…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 10,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p10-c13"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 39,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p39-c84"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 62,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p62-c138"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 63,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p63-c141"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 101,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p101-c224"
+        }
+      ]
+    },
+    "homophone_son_sont": {
+      "titreAide": "son ou sont",
+      "memo": "Repère Bescherelle: sont = être au pluriel.",
+      "regle": "Son est un déterminant possessif devant un nom; sont est le verbe être avec ils/elles.",
+      "exemples": [
+        "Son cahier.",
+        "Ils sont prêts.",
+        "Elles sont arrivées.",
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.64: guère car un déterminant n’a pas le même rôle qu’un adjectif : – dans le groupe nominal mon chat gris, l’adjectif gris peut être supprimé, mais pas le déter- minant possessif mon ; – la phrase Le chat est gris est correcte, mais pas l Le chat est mon. • Les a…",
+        "Bescherelle La grammaire pour tous.pdf p.70: 68 SINGULIER PLURIEL MASCULIN FÉMININ Personnes du singulier devant une consonne devant une voyelle 1re pers. mon ma mon mes 2e pers. ton ta ton tes 3e pers. son sa son ses Personnes du pluriel 1re pers. notre nos 2e pers. votre vos 3e pers. leur leurs • Le d…",
+        "Bescherelle La grammaire pour tous.pdf p.71: 69 83 à 84 LE NOM ET LE GROUPE NOMINAL – déictique , quand il renvoie au locuteur ou à l’interlocuteur ; – représentant , quand il renvoie à une personne ou à une chose qui vient d’être désignée ou qui va l’être. Mon téléphone est encore tombé en panne ! Le d…",
+        "Bescherelle La grammaire pour tous.pdf p.179: ciés, autrement dit qui sert de neutre. La presse écrite est en danger , il faut bien le reconnaître. Le pronom le remplace toute la proposition la presse écrite est en danger : il se met au masculin singulier. La personne du pronom • La plupart des pronoms s…",
+        "Bescherelle La grammaire pour tous.pdf p.191: 189 259 à 261 Les autres pronoms J’ai acheté des pêches. Toutes ne sont pas mûres. Prends plutôt celle-ci. Toutes et celle-ci sont des pronoms. Il existe différents types de pronoms. LES PRONOMS POSSESSIFS Qu’est-ce qu’un pronom possessif ? • Le pronom posses…",
+        "Bescherelle La grammaire pour tous.pdf p.191: j’aime être entouré de tous les miens. Il faut comprendre : j’aime être entouré de toute ma famille. Les formes du pronom possessif • La forme du pronom possessif varie selon : – le genre et le nombre du nom dont il est l’équivalent ; Peux-tu me prêter tes bo…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c120"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 70,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p70-c131"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 71,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p71-c133"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 179,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p179-c354"
+        }
+      ]
+    },
+    "homophone_sont_son": {
+      "titreAide": "son ou sont",
+      "memo": "Repère Bescherelle: son + nom.",
+      "regle": "Devant un nom, on écrit généralement son. Sont est une forme du verbe être.",
+      "exemples": [
+        "Son stylo.",
+        "Ils sont calmes.",
+        "Son ami arrive.",
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.64: guère car un déterminant n’a pas le même rôle qu’un adjectif : – dans le groupe nominal mon chat gris, l’adjectif gris peut être supprimé, mais pas le déter- minant possessif mon ; – la phrase Le chat est gris est correcte, mais pas l Le chat est mon. • Les a…",
+        "Bescherelle La grammaire pour tous.pdf p.70: 68 SINGULIER PLURIEL MASCULIN FÉMININ Personnes du singulier devant une consonne devant une voyelle 1re pers. mon ma mon mes 2e pers. ton ta ton tes 3e pers. son sa son ses Personnes du pluriel 1re pers. notre nos 2e pers. votre vos 3e pers. leur leurs • Le d…",
+        "Bescherelle La grammaire pour tous.pdf p.71: 69 83 à 84 LE NOM ET LE GROUPE NOMINAL – déictique , quand il renvoie au locuteur ou à l’interlocuteur ; – représentant , quand il renvoie à une personne ou à une chose qui vient d’être désignée ou qui va l’être. Mon téléphone est encore tombé en panne ! Le d…",
+        "Bescherelle La grammaire pour tous.pdf p.179: ciés, autrement dit qui sert de neutre. La presse écrite est en danger , il faut bien le reconnaître. Le pronom le remplace toute la proposition la presse écrite est en danger : il se met au masculin singulier. La personne du pronom • La plupart des pronoms s…",
+        "Bescherelle La grammaire pour tous.pdf p.191: 189 259 à 261 Les autres pronoms J’ai acheté des pêches. Toutes ne sont pas mûres. Prends plutôt celle-ci. Toutes et celle-ci sont des pronoms. Il existe différents types de pronoms. LES PRONOMS POSSESSIFS Qu’est-ce qu’un pronom possessif ? • Le pronom posses…",
+        "Bescherelle La grammaire pour tous.pdf p.191: j’aime être entouré de tous les miens. Il faut comprendre : j’aime être entouré de toute ma famille. Les formes du pronom possessif • La forme du pronom possessif varie selon : – le genre et le nombre du nom dont il est l’équivalent ; Peux-tu me prêter tes bo…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c120"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 70,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p70-c131"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 71,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p71-c133"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 179,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p179-c354"
+        }
+      ]
+    },
+    "homophone_ce_se": {
+      "titreAide": "ce ou se",
+      "memo": "Repère Bescherelle: se devant un verbe pronominal.",
+      "regle": "Devant un verbe pronominal, on écrit se. Devant un nom (ou pour désigner), on écrit ce.",
+      "exemples": [
+        "Il se lave.",
+        "Ce livre.",
+        "Elle se repose.",
+        "bescherelle la conjugaison pour tous.pdf p.138: REM • Accord en personne la première personne prévaut sur les deux autres. Toi et moi (nous) adorons la grammaire. Toi, Ernest et m oi (nous) passons notre temps àjàir e de la synta xe. la deuxième personne prévaut sur la troisième : 1 Emile et t oi (vous) av…",
+        "Bescherelle La grammaire pour tous.pdf p.8: Les déterminants du nom 70 - 72 Qu’est-ce qu’un déterminant ? 73 - 74 L’article indéfini 75 - 76 L’article défini 77 - 79 L’article partitif 80 - 81 Le déterminant démonstratif 82 - 83 Le déterminant possessif 84 - 85 Le déterminant numéral cardinal 86 - 87 L…",
+        "Bescherelle La grammaire pour tous.pdf p.12: ions disponibles, déjà construites, d’une langue donnée. Les neuf catégories de mots On a l’habitude de répartir les mots dans neuf catégories : nom , déterminant , adjectif , pronom , verbe , adverbe , préposition , conjonc- tion et interjection . L’apparten…",
+        "Bescherelle La grammaire pour tous.pdf p.13: 11 NOTIONS DE BASE 1 à 2 • Le nom permet de désigner un être ou une chose. En général, il est précédé d’un déterminant et forme avec ce mot un groupe nominal . une robe, le chat • Le déterminant forme avec le nom un groupe nominal. une robe, le chat • L’adjec…",
+        "Bescherelle La grammaire pour tous.pdf p.14: 12 Qu’est-ce qu’une locution ? • On appelle locution une suite de mots qui fonctionne en bloc comme un mot. En général, il ne se trompe pas. Généralement, il ne se trompe pas. La suite de mots en général est une locution car il s’agit d’une expression figée,…",
+        "Bescherelle La grammaire pour tous.pdf p.14: us du château. une préposition : Ce fleuve disparaît sous le château. Locution conjonctive Vous réussirez votre gâteau à condition que vous suiviez la recette. une conjonction (de subordination) : Vous réussirez votre gâteau si vous suivez la recette. Locutio…",
+        "Bescherelle La grammaire pour tous.pdf p.15: dans la construction de la phrase. REMARQUES 1. Un mot lexical peut devenir un mot grammatical. Marie a un livre d’art. Le verbe avoir est lexical car il signifi e « possède ». Marie a acheté un livre d’art. Le verbe avoir est grammatical car il sert à conjug…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 138,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p138-c296"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 8,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p8-c9"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 12,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p12-c17"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 13,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p13-c18"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 14,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p14-c21"
+        }
+      ]
+    },
+    "homophone_se_ce": {
+      "titreAide": "ce ou se",
+      "memo": "Repère Bescherelle: ce accompagne souvent un nom.",
+      "regle": "Ce est un déterminant/pronom démonstratif. Se est un pronom réfléchi lié à un verbe.",
+      "exemples": [
+        "Ce matin.",
+        "Il se lève.",
+        "Ce garçon court.",
+        "bescherelle la conjugaison pour tous.pdf p.138: REM • Accord en personne la première personne prévaut sur les deux autres. Toi et moi (nous) adorons la grammaire. Toi, Ernest et m oi (nous) passons notre temps àjàir e de la synta xe. la deuxième personne prévaut sur la troisième : 1 Emile et t oi (vous) av…",
+        "Bescherelle La grammaire pour tous.pdf p.8: Les déterminants du nom 70 - 72 Qu’est-ce qu’un déterminant ? 73 - 74 L’article indéfini 75 - 76 L’article défini 77 - 79 L’article partitif 80 - 81 Le déterminant démonstratif 82 - 83 Le déterminant possessif 84 - 85 Le déterminant numéral cardinal 86 - 87 L…",
+        "Bescherelle La grammaire pour tous.pdf p.12: ions disponibles, déjà construites, d’une langue donnée. Les neuf catégories de mots On a l’habitude de répartir les mots dans neuf catégories : nom , déterminant , adjectif , pronom , verbe , adverbe , préposition , conjonc- tion et interjection . L’apparten…",
+        "Bescherelle La grammaire pour tous.pdf p.13: 11 NOTIONS DE BASE 1 à 2 • Le nom permet de désigner un être ou une chose. En général, il est précédé d’un déterminant et forme avec ce mot un groupe nominal . une robe, le chat • Le déterminant forme avec le nom un groupe nominal. une robe, le chat • L’adjec…",
+        "Bescherelle La grammaire pour tous.pdf p.14: 12 Qu’est-ce qu’une locution ? • On appelle locution une suite de mots qui fonctionne en bloc comme un mot. En général, il ne se trompe pas. Généralement, il ne se trompe pas. La suite de mots en général est une locution car il s’agit d’une expression figée,…",
+        "Bescherelle La grammaire pour tous.pdf p.14: us du château. une préposition : Ce fleuve disparaît sous le château. Locution conjonctive Vous réussirez votre gâteau à condition que vous suiviez la recette. une conjonction (de subordination) : Vous réussirez votre gâteau si vous suivez la recette. Locutio…",
+        "Bescherelle La grammaire pour tous.pdf p.15: dans la construction de la phrase. REMARQUES 1. Un mot lexical peut devenir un mot grammatical. Marie a un livre d’art. Le verbe avoir est lexical car il signifi e « possède ». Marie a acheté un livre d’art. Le verbe avoir est grammatical car il sert à conjug…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 138,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p138-c296"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 8,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p8-c9"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 12,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p12-c17"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 13,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p13-c18"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 14,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p14-c21"
+        }
+      ]
+    },
+    "homophone_ces_ses": {
+      "titreAide": "ces ou ses",
+      "memo": "Repère Bescherelle: ses = possession.",
+      "regle": "Ces désigne (démonstratif). Ses indique l'appartenance (possessif).",
+      "exemples": [
+        "Ces livres sont lourds.",
+        "Ses livres sont neufs.",
+        "Ces enfants jouent.",
+        "Bescherelle La grammaire pour tous.pdf p.8: Les déterminants du nom 70 - 72 Qu’est-ce qu’un déterminant ? 73 - 74 L’article indéfini 75 - 76 L’article défini 77 - 79 L’article partitif 80 - 81 Le déterminant démonstratif 82 - 83 Le déterminant possessif 84 - 85 Le déterminant numéral cardinal 86 - 87 L…",
+        "Bescherelle La grammaire pour tous.pdf p.9: 7 Le complément d’objet du verbe 216 - 220 Qu’est-ce qu’un complément d’objet direct ? 221 - 225 Qu’est-ce qu’un complément d’objet indirect ? Les constructions attributives 226 - 229 Qu’est-ce qu’un attribut du sujet ? 230 - 232 Qu’est-ce qu’un attribut du c…",
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.64: guère car un déterminant n’a pas le même rôle qu’un adjectif : – dans le groupe nominal mon chat gris, l’adjectif gris peut être supprimé, mais pas le déter- minant possessif mon ; – la phrase Le chat est gris est correcte, mais pas l Le chat est mon. • Les a…",
+        "Bescherelle La grammaire pour tous.pdf p.69: ratif en -ci renvoie à l’élé - ment le plus proche dans la réalité ou dans le texte et le démonstratif en -là renvoie à l’élément le plus éloigné dans la réalité ou dans le texte. Je préfère ce costume-ci, mais ce costume-là est moins cher. Le vêtement que dé…",
+        "Bescherelle La grammaire pour tous.pdf p.78: société qui porte ce nom. Les Picasso(s) sont devenus très chers. Le groupe nominal sujet Les Picasso(s) désigne les tableaux peints par Picasso. Nous avons acheté une Renault . Le nom de l’entreprise est utilisé pour désigner la voiture produite par cette en…",
+        "Bescherelle La grammaire pour tous.pdf p.178: 176 Ces pronoms sont classés dans la catégorie des déictiques ➜ 412 (du grec deixis : action de montrer), c’est-à-dire dans la catégorie des divers éléments qui matérialisent, qui donnent à voir la situation d’énonciation dans le texte. REMARQUE Le pronom imp…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 8,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p8-c9"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 9,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p9-c11"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c120"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 69,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p69-c130"
+        }
+      ]
+    },
+    "homophone_ses_ces": {
+      "titreAide": "ces ou ses",
+      "memo": "Repère Bescherelle: test 'mes/tes'.",
+      "regle": "Si tu peux remplacer par mes/tes, écris ses. Sinon, pour montrer/désigner, écris ces.",
+      "exemples": [
+        "Ses amis arrivent.",
+        "Ces amis-là arrivent.",
+        "Ces cahiers / ses cahiers.",
+        "Bescherelle La grammaire pour tous.pdf p.8: Les déterminants du nom 70 - 72 Qu’est-ce qu’un déterminant ? 73 - 74 L’article indéfini 75 - 76 L’article défini 77 - 79 L’article partitif 80 - 81 Le déterminant démonstratif 82 - 83 Le déterminant possessif 84 - 85 Le déterminant numéral cardinal 86 - 87 L…",
+        "Bescherelle La grammaire pour tous.pdf p.9: 7 Le complément d’objet du verbe 216 - 220 Qu’est-ce qu’un complément d’objet direct ? 221 - 225 Qu’est-ce qu’un complément d’objet indirect ? Les constructions attributives 226 - 229 Qu’est-ce qu’un attribut du sujet ? 230 - 232 Qu’est-ce qu’un attribut du c…",
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.64: guère car un déterminant n’a pas le même rôle qu’un adjectif : – dans le groupe nominal mon chat gris, l’adjectif gris peut être supprimé, mais pas le déter- minant possessif mon ; – la phrase Le chat est gris est correcte, mais pas l Le chat est mon. • Les a…",
+        "Bescherelle La grammaire pour tous.pdf p.69: ratif en -ci renvoie à l’élé - ment le plus proche dans la réalité ou dans le texte et le démonstratif en -là renvoie à l’élément le plus éloigné dans la réalité ou dans le texte. Je préfère ce costume-ci, mais ce costume-là est moins cher. Le vêtement que dé…",
+        "Bescherelle La grammaire pour tous.pdf p.78: société qui porte ce nom. Les Picasso(s) sont devenus très chers. Le groupe nominal sujet Les Picasso(s) désigne les tableaux peints par Picasso. Nous avons acheté une Renault . Le nom de l’entreprise est utilisé pour désigner la voiture produite par cette en…",
+        "Bescherelle La grammaire pour tous.pdf p.178: 176 Ces pronoms sont classés dans la catégorie des déictiques ➜ 412 (du grec deixis : action de montrer), c’est-à-dire dans la catégorie des divers éléments qui matérialisent, qui donnent à voir la situation d’énonciation dans le texte. REMARQUE Le pronom imp…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 8,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p8-c9"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 9,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p9-c11"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c120"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 69,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p69-c130"
+        }
+      ]
+    },
+    "homophone_ou_ou_grave": {
+      "titreAide": "ou ou où",
+      "memo": "Repère Bescherelle: où = lieu/temps.",
+      "regle": "Où indique le lieu ou parfois le temps. Ou exprime un choix.",
+      "exemples": [
+        "Où vas-tu ?",
+        "Toi ou moi.",
+        "Je ne sais pas où aller.",
+        "Bescherelle La grammaire pour tous.pdf p.98: Les modes impersonnels n’ont pas de « sujet » au sens strict, puisque le sujet donne ses marques de personne, de nombre et parfois de genre au verbe. Cependant, nous avons fait le choix de conserver cette étiquette traditionnelle dans cet ouvrage. ❚ Mode temp…",
+        "bescherelle la conjugaison pour tous.pdf p.12: 3 le chuix de l'auxiliaire Le problème du choix de l'aux iliaire se pose rarement. En effet:, la plupart des verbes utilisent, pour leurs formes composées , un seul auxiliaire : être ou avoir. Il existe cependant un petit nombre de verbes qui utilisent altern…",
+        "bescherelle la conjugaison pour tous.pdf p.13: REM Des verbes intransitifs employés aVec être et avoir Certains verbes intransitifs peuvent, selon le cas, faire apparaître l'aux iliaire avoir ou l'auxiliaire être. Le premier insiste sur l'action en train de se faire ; le second la présente comme accomplie…",
+        "bescherelle la conjugaison pour tous.pdf p.15: s 9U' ils sc fussent mé fiés p Pa se s' être méfié s' étant méfté Passé cn s'é tant méfié Conditionnel passé 2' forme. mê mes formes que le plus- que-parfait du subjonctif Dans la liste des verbe s qui figure a la fin de l'ouvrage , les verbes pronominaux son…",
+        "bescherelle la conjugaison pour tous.pdf p.65: is tu eus a,SIS Présent Passé il assit il eut a'sis a\"ois aie assis noUS assîm es no us e ûmes assis assO\\'on\"l a}'ons assis vou ~ assîtc~ VOliS eûtes assis assoy{'Z aye7 assis ils ass ü'cnt ils cure nt assis Fuwr simple Futur antér 'eu r ., INFINITIF j' aSSO…",
+        "bescherelle la conjugaison pour tous.pdf p.66: 52 INDICATIF Présent ils siéent Impar fait il \"'1 ait ils ~eyai e nt Passé simple futur simple il ' \"'r a ils siéront P,ssé composé Plus-que-pa rfait Passe antérieur Futur antérieur CONDITIONNE L Présent Passé ils siéraiçnt Ce verbe n', pas de [emps com posés…",
+        "bescherelle la conjugaison pour tous.pdf p.109: \" QU'EST-CE QU'UN VERBE 1 9\"-95 95 Les verbes intransitifs, t ransitifs et attributifs' ' •. • Les v-erbes intransitifs Certains verbes d'action désignent des processus qui I)e S'exi:!/\"Cer'lt pas sur un ~ objet: aller, dormir, marcher, mugir\", Ces verbes son…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 98,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p98-c190"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 12,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p12-c16"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 13,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p13-c17"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 15,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p15-c23"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 65,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p65-c146"
+        }
+      ]
+    },
+    "homophone_ou_grave_ou": {
+      "titreAide": "ou ou où",
+      "memo": "Repère Bescherelle: ou = alternative.",
+      "regle": "Pour un choix entre deux éléments, on écrit ou sans accent.",
+      "exemples": [
+        "Thé ou café ?",
+        "Où habites-tu ?",
+        "Vrai ou faux ?",
+        "Bescherelle La grammaire pour tous.pdf p.98: Les modes impersonnels n’ont pas de « sujet » au sens strict, puisque le sujet donne ses marques de personne, de nombre et parfois de genre au verbe. Cependant, nous avons fait le choix de conserver cette étiquette traditionnelle dans cet ouvrage. ❚ Mode temp…",
+        "bescherelle la conjugaison pour tous.pdf p.12: 3 le chuix de l'auxiliaire Le problème du choix de l'aux iliaire se pose rarement. En effet:, la plupart des verbes utilisent, pour leurs formes composées , un seul auxiliaire : être ou avoir. Il existe cependant un petit nombre de verbes qui utilisent altern…",
+        "bescherelle la conjugaison pour tous.pdf p.13: REM Des verbes intransitifs employés aVec être et avoir Certains verbes intransitifs peuvent, selon le cas, faire apparaître l'aux iliaire avoir ou l'auxiliaire être. Le premier insiste sur l'action en train de se faire ; le second la présente comme accomplie…",
+        "bescherelle la conjugaison pour tous.pdf p.15: s 9U' ils sc fussent mé fiés p Pa se s' être méfié s' étant méfté Passé cn s'é tant méfié Conditionnel passé 2' forme. mê mes formes que le plus- que-parfait du subjonctif Dans la liste des verbe s qui figure a la fin de l'ouvrage , les verbes pronominaux son…",
+        "bescherelle la conjugaison pour tous.pdf p.65: is tu eus a,SIS Présent Passé il assit il eut a'sis a\"ois aie assis noUS assîm es no us e ûmes assis assO\\'on\"l a}'ons assis vou ~ assîtc~ VOliS eûtes assis assoy{'Z aye7 assis ils ass ü'cnt ils cure nt assis Fuwr simple Futur antér 'eu r ., INFINITIF j' aSSO…",
+        "bescherelle la conjugaison pour tous.pdf p.66: 52 INDICATIF Présent ils siéent Impar fait il \"'1 ait ils ~eyai e nt Passé simple futur simple il ' \"'r a ils siéront P,ssé composé Plus-que-pa rfait Passe antérieur Futur antérieur CONDITIONNE L Présent Passé ils siéraiçnt Ce verbe n', pas de [emps com posés…",
+        "bescherelle la conjugaison pour tous.pdf p.109: \" QU'EST-CE QU'UN VERBE 1 9\"-95 95 Les verbes intransitifs, t ransitifs et attributifs' ' •. • Les v-erbes intransitifs Certains verbes d'action désignent des processus qui I)e S'exi:!/\"Cer'lt pas sur un ~ objet: aller, dormir, marcher, mugir\", Ces verbes son…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 98,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p98-c190"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 12,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p12-c16"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 13,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p13-c17"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 15,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p15-c23"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 65,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p65-c146"
+        }
+      ]
+    },
+    "homophone_quand_quant": {
+      "titreAide": "quand ou quant",
+      "memo": "Repère Bescherelle: quant s'emploie dans quant à/au/aux.",
+      "regle": "Quand exprime le temps. Quant introduit un thème: quant à, quant au, quant aux.",
+      "exemples": [
+        "Quand viens-tu ?",
+        "Quant à moi, je reste.",
+        "Quant aux élèves, ils sont prêts.",
+        "Bescherelle Lorthographe pour tous.pdf p.84: ccent au sens de « à côté de » ou « sur le point de », qu’il ne faut pas confondre avec l’adjectif prêt, prête quand avec un d pour indiquer le temps, qu’il ne faut pas confondre avec quant à quant à avec un t au sens de « en ce qui concerne » quelque sans s…",
+        "Bescherelle Lorthographe pour tous.pdf p.112: 110 pourquoi ou pour quoi ? ❚ Pourquoi, en un mot, interroge sur la cause. Pourquoi est-il parti ? ❚ C’est pourquoi introduit une conséquence. Il est malade, c’est pourquoi il est absent. ❚ Pour quoi en deux mots peut être remplacé par pour quelle chose, dans…",
+        "bescherelle la conjugaison pour tous.pdf p.139: LA SYNTAXE OU VERBE 30·' loin les plus nombreux sont terminés au masculin par .é, .i ou -u et ne marquent le féminin que dans l'orthographe : -ée, oie, -ue. Quant à l'accord en nombre, il n'a jamais de manifestation orale, sauf dans les cas de liaisons, eux m…",
+        "Bescherelle Lorthographe pour tous.pdf p.14: nombreux mots étran - gers viennent s’intégrer au langage de tous les jours (qu’il s’agisse de sport, de cuisine, de marketing, de publicité, etc.). Ce sont désormais les grands dictionnaires « commerciaux » (Larousse, Robert) qui enregistrent les usages, not…",
+        "Bescherelle Lorthographe pour tous.pdf p.85: 83 VOCABULAIRE & ORTHOGRAPHE Les mots 128 à 129 toutefois en un mot voilà avec un accent grave volontiers avec un s Du point de vue de la forme Du point de vue de la forme, on distingue trois grands ensembles de mots (ou unités du lexique) : les mots simples,…",
+        "Bescherelle Lorthographe pour tous.pdf p.85: bale ; – pomme de terre, chemin de fer sont des locutions nominales (équivalant à un nom). REMARQUE On nomme parfois « mots composés sans trait d’union » ces locutions nominales. ❚ Une expression est un ensemble de mots dont le sens global est indépendant du…",
+        "bescherelle la conjugaison pour tous.pdf p.3: T-P p Qu'est-ce que la conjugaison? La conjugaison est la liste des différentes formes qui, pour chaque verbe, donnent les indications de personne, de nombre, de temps et d'aspect, de mode et de voix . Conjuguer un verbe, c'est énumérer ces formes. La mauvais…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 84,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p84-c145"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 112,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p112-c196"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 139,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p139-c298"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 14,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p14-c23"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 85,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p85-c146"
+        }
+      ]
+    },
+    "homophone_quant_quen": {
+      "titreAide": "quant ou qu'en",
+      "memo": "Repère Bescherelle: qu'en = que + en.",
+      "regle": "Écris qu'en quand tu peux séparer en 'que' + 'en'. Quant s'emploie surtout avec à/au/aux.",
+      "exemples": [
+        "Qu'en penses-tu ?",
+        "Quant à lui, il part.",
+        "Je n'en veux qu'un.",
+        "bescherelle la conjugaison pour tous.pdf p.139: LA SYNTAXE OU VERBE 30·' loin les plus nombreux sont terminés au masculin par .é, .i ou -u et ne marquent le féminin que dans l'orthographe : -ée, oie, -ue. Quant à l'accord en nombre, il n'a jamais de manifestation orale, sauf dans les cas de liaisons, eux m…",
+        "Bescherelle La grammaire pour tous.pdf p.121: 119 Les valeurs des temps du subjonctif ❚ La valeur des temps dans les propositions indépendantes ou les propositions principales • Dans une principale ou une indépendante, le présent du subjonctif situe généralement l’action dans le futur, et non dans le pré…",
+        "Bescherelle La grammaire pour tous.pdf p.160: 158 Une vieille dame promène son chien. Un homme téléphone à sa femme. Le groupe de mots son chien indique à qui s’applique l’action. Le groupe de mots à sa femme indique en direction de qui s’effectue l’action. On les appelle des compléments d’objet du verbe…",
+        "Bescherelle La grammaire pour tous.pdf p.280: 278 Sur la différence entre concession et opposition ➜ 48. • Elle est introduite par une locution conjonctive du type alors que, au lieu que, loin que, bien loin que . • Le mode dépend de la locution conjonctive employée : – alors que entraîne l’indicatif ; A…",
+        "Bescherelle La grammaire pour tous.pdf p.297: 295 414 à 416 TEXTE ET DISCOURS Il est évident que les abeilles auront disparu avant la fin du siècle. Le tour appréciatif il est évident que renforce la vérité de la proposition les abeilles auront disparu avant la fin du siècle. C’est un modalisateur de cet…",
+        "Bescherelle Lorthographe pour tous.pdf p.14: nombreux mots étran - gers viennent s’intégrer au langage de tous les jours (qu’il s’agisse de sport, de cuisine, de marketing, de publicité, etc.). Ce sont désormais les grands dictionnaires « commerciaux » (Larousse, Robert) qui enregistrent les usages, not…",
+        "Bescherelle Lorthographe pour tous.pdf p.64: 62 La barre oblique et l’astérisque La barre oblique ❚ On emploie la barre oblique pour remplacer : • par ou à avec des unités de mesure abrégées ; La vitesse est limitée à 90 km/h. • la barre horizontale de fraction dans un texte courant ; Prendre 3/4 de lit…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 139,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p139-c298"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 121,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p121-c238"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 160,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p160-c316"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 280,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p280-c547"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 297,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p297-c584"
+        }
+      ]
+    },
+    "homophone_quand_quen": {
+      "titreAide": "quand ou qu'en",
+      "memo": "Repère Bescherelle: quand = temps.",
+      "regle": "Quand renvoie au temps. Qu'en correspond à la suite 'que en'.",
+      "exemples": [
+        "Quand partiras-tu ?",
+        "Qu'en dis-tu ?",
+        "Je me demande quand il viendra.",
+        "Bescherelle La grammaire pour tous.pdf p.121: 119 Les valeurs des temps du subjonctif ❚ La valeur des temps dans les propositions indépendantes ou les propositions principales • Dans une principale ou une indépendante, le présent du subjonctif situe généralement l’action dans le futur, et non dans le pré…",
+        "Bescherelle La grammaire pour tous.pdf p.280: 278 Sur la différence entre concession et opposition ➜ 48. • Elle est introduite par une locution conjonctive du type alors que, au lieu que, loin que, bien loin que . • Le mode dépend de la locution conjonctive employée : – alors que entraîne l’indicatif ; A…",
+        "Bescherelle La grammaire pour tous.pdf p.297: 295 414 à 416 TEXTE ET DISCOURS Il est évident que les abeilles auront disparu avant la fin du siècle. Le tour appréciatif il est évident que renforce la vérité de la proposition les abeilles auront disparu avant la fin du siècle. C’est un modalisateur de cet…",
+        "Bescherelle Lorthographe pour tous.pdf p.108: 106 Homonymes et paronymes L’HOMONYMIE Au sens strict, le terme homonyme recouvre deux notions bien distinctes : les homophones et les homographes. Homonyme, homophone ou homographe ? ❚ Les mots ver, vers, verre, vert sont plus exactement des homophones (des…",
+        "Bescherelle La grammaire pour tous.pdf p.160: 158 Une vieille dame promène son chien. Un homme téléphone à sa femme. Le groupe de mots son chien indique à qui s’applique l’action. Le groupe de mots à sa femme indique en direction de qui s’effectue l’action. On les appelle des compléments d’objet du verbe…",
+        "Bescherelle Lorthographe pour tous.pdf p.64: 62 La barre oblique et l’astérisque La barre oblique ❚ On emploie la barre oblique pour remplacer : • par ou à avec des unités de mesure abrégées ; La vitesse est limitée à 90 km/h. • la barre horizontale de fraction dans un texte courant ; Prendre 3/4 de lit…",
+        "Bescherelle Lorthographe pour tous.pdf p.111: 109 VOCABULAIRE & ORTHOGRAPHE Homonymes et paronymes 155 à 162 leur ou leurs ? ❚ Le pronom personnel s’écrit toujours leur. On pourrait dire lui au singulier. Je leur parle. Parle-leur. → Je lui parle. Parle-lui. ❚ Le déterminant possessif s’écrit leur quand…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 121,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p121-c238"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 280,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p280-c547"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 297,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p297-c584"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 108,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p108-c188"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 160,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p160-c316"
+        }
+      ]
+    },
+    "homophone_tout_tous": {
+      "titreAide": "tout ou tous",
+      "memo": "Repère Bescherelle: devant un nom masculin pluriel, on écrit tous.",
+      "regle": "Tout est singulier dans de nombreux cas; devant un nom masculin pluriel, on attend généralement tous.",
+      "exemples": [
+        "Tous les élèves.",
+        "Tout le monde.",
+        "Tous les jours.",
+        "bescherelle la conjugaison pour tous.pdf p.137: LA SYNTAXE DU VERBE 12S 1 l'accord au singulier indique que l'expression qui unit les termes conserve sa valeur comparative. C'est notamment ce qui se produit dans les cas d'incises isolées par des virgules: Mexico, au même titre ~ ue Toky o et Sào Paulo, est…",
+        "bescherelle la conjugaison pour tous.pdf p.138: REM • Accord en personne la première personne prévaut sur les deux autres. Toi et moi (nous) adorons la grammaire. Toi, Ernest et m oi (nous) passons notre temps àjàir e de la synta xe. la deuxième personne prévaut sur la troisième : 1 Emile et t oi (vous) av…",
+        "bescherelle la conjugaison pour tous.pdf p.140: • Les petites filles assises sur un ban c regardaient les voitures. épit hète fém ini n pluriel Assises sur un ban c, elles regardaient les voitures. appos itI o n fémÎn in pluri el Elles étaient assise s sur un ban c, regardant les voitures. attribut fé mini…",
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.70: 68 SINGULIER PLURIEL MASCULIN FÉMININ Personnes du singulier devant une consonne devant une voyelle 1re pers. mon ma mon mes 2e pers. ton ta ton tes 3e pers. son sa son ses Personnes du pluriel 1re pers. notre nos 2e pers. votre vos 3e pers. leur leurs • Le d…",
+        "Bescherelle La grammaire pour tous.pdf p.148: 146 • Cependant, lorsque le pronom neutre ce est sujet du verbe être et que l’expression qui suit le verbe est au pluriel, l’accord du verbe se fait souvent au pluriel. Il ne se fait pas toujours à l’oral, mais il s’impose à l’écrit. C’est des skieurs qui ont…",
+        "Bescherelle La grammaire pour tous.pdf p.151: 149 LE VERBE ET LE GROUPE VERBAL 196 à 200 L’ ACCORD DU PARTICIPE PASSÉ Le participe passé est employé sans auxiliaire Le participe passé sans auxiliaire : règle générale • Le participe passé relève à la fois de la catégorie du verbe et de celle de l’ad - jec…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 137,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p137-c294"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 138,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p138-c296"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 140,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p140-c300"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 70,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p70-c131"
+        }
+      ]
+    },
+    "homophone_peut_peu": {
+      "titreAide": "peut ou peu",
+      "memo": "Repère Bescherelle: peu = quantité.",
+      "regle": "Peu exprime une quantité. Peut est le verbe pouvoir (il/elle/on peut).",
+      "exemples": [
+        "Un peu d'eau.",
+        "Il peut venir.",
+        "Très peu de bruit.",
+        "bescherelle la conjugaison pour tous.pdf p.33: ir 33 dormir endormir rendormir 34 counr acco tlnr concounr di sco uri r en cou nr par courIr recou nr seco unr 35 mounr 36 sen'ir 1 dess{'rvir resse rvir J7 r uir enfuir (s') \" 38 oUir , 39 gC~IJ' 40 r ecevo ir apercevoir concevOir décevo ir pCl'cev oir 41 \"…",
+        "bescherelle la conjugaison pour tous.pdf p.58: 45 . 3' gro up e pOUVOIr INDICATIF SUBJONCTIF Present Passé composé Présent Passe pc' u:\" pli j, ., ., J<' J al pu ~ u< Je pLi' ........ \"· ~U< ) ale pu tu peux tu as pu 'iuc tu p Ul S~t'~ (IUl.' tu aJe:s pu il peut il a pu 'lu' il pUIsse ~ u· il ait p u nous…",
+        "bescherelle la conjugaison pour tous.pdf p.58: urent ib e uren t pu Futur simp le Futu r anteri eur INFINIT IF je pourra i ., aurai pu ) tu pou rras tu auras pu Present Passé i l po u rra il aura pu P OU \\ 'O IT avoi r pu nous pou rrons nou s aurons pu vous pou rrez vous aur ez pu ils pou rr on t ils auro…",
+        "bescherelle la conjugaison pour tous.pdf p.107: QU'EST-CE QU'UN VERBE? - Être est également ['auxiliaire des verbes construits de façon pronominale (-----t paragraphes et ) : Elle ~'est sOÎJJnée, puis elle s'est lavé les mains. Pour l'accord du participe -> paragraphes l' à 1 1 • Emploi de l'auxiliaire avo…",
+        "bescherelle la conjugaison pour tous.pdf p.107: gaison appar ût en prem ière place. Il est comm ode de cO'tsidérer comme sem i-aw<'lia:res les sept verbes su ivants: aller et ven;r; devoir, pouvoir. savoir et vouloir; faire. • E-\"pi ois de a/:er et venir Aller et venir s;.l:vis de l'infinitif d' un verbe.…",
+        "bescherelle la conjugaison pour tous.pdf p.108: • Emplois de devoir, pouvoir, savoir et pouvoir Certains verbes servent à « modaliser» le verbe à l'infinitif qui les suit. 1/ s'agi! de devoir, qui marque la nécessité, et parfo:s la probabilité, de pcu'loir, qui marque la possibilité, de savoir, marque de l…",
+        "bescherelle la conjugaison pour tous.pdf p.109: t d\"obJet er, devient I~' sujet, Lf miel est produit par le..~ abeilles. sujet - On pre '1d~, spé;;:;aierrle'1! garde â '1t- pas :::o'1fondre le com p ~é ment d'objet direct ~ avec les complément s CI;con stanciels construits dire ctement: Il boit la nuit, il…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 33,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p33-c71"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 58,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p58-c130"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 58,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p58-c131"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 107,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p107-c232"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 107,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p107-c233"
+        }
+      ]
+    },
+    "homophone_peu_peut": {
+      "titreAide": "peu ou peut",
+      "memo": "Repère Bescherelle: peut = verbe pouvoir.",
+      "regle": "Avec un sujet + verbe, on écrit peut. Peu sert à exprimer la quantité.",
+      "exemples": [
+        "Il peut lire.",
+        "Peu de temps.",
+        "Elle peut sortir.",
+        "bescherelle la conjugaison pour tous.pdf p.33: ir 33 dormir endormir rendormir 34 counr acco tlnr concounr di sco uri r en cou nr par courIr recou nr seco unr 35 mounr 36 sen'ir 1 dess{'rvir resse rvir J7 r uir enfuir (s') \" 38 oUir , 39 gC~IJ' 40 r ecevo ir apercevoir concevOir décevo ir pCl'cev oir 41 \"…",
+        "bescherelle la conjugaison pour tous.pdf p.58: 45 . 3' gro up e pOUVOIr INDICATIF SUBJONCTIF Present Passé composé Présent Passe pc' u:\" pli j, ., ., J<' J al pu ~ u< Je pLi' ........ \"· ~U< ) ale pu tu peux tu as pu 'iuc tu p Ul S~t'~ (IUl.' tu aJe:s pu il peut il a pu 'lu' il pUIsse ~ u· il ait p u nous…",
+        "bescherelle la conjugaison pour tous.pdf p.58: urent ib e uren t pu Futur simp le Futu r anteri eur INFINIT IF je pourra i ., aurai pu ) tu pou rras tu auras pu Present Passé i l po u rra il aura pu P OU \\ 'O IT avoi r pu nous pou rrons nou s aurons pu vous pou rrez vous aur ez pu ils pou rr on t ils auro…",
+        "bescherelle la conjugaison pour tous.pdf p.107: QU'EST-CE QU'UN VERBE? - Être est également ['auxiliaire des verbes construits de façon pronominale (-----t paragraphes et ) : Elle ~'est sOÎJJnée, puis elle s'est lavé les mains. Pour l'accord du participe -> paragraphes l' à 1 1 • Emploi de l'auxiliaire avo…",
+        "bescherelle la conjugaison pour tous.pdf p.107: gaison appar ût en prem ière place. Il est comm ode de cO'tsidérer comme sem i-aw<'lia:res les sept verbes su ivants: aller et ven;r; devoir, pouvoir. savoir et vouloir; faire. • E-\"pi ois de a/:er et venir Aller et venir s;.l:vis de l'infinitif d' un verbe.…",
+        "bescherelle la conjugaison pour tous.pdf p.108: • Emplois de devoir, pouvoir, savoir et pouvoir Certains verbes servent à « modaliser» le verbe à l'infinitif qui les suit. 1/ s'agi! de devoir, qui marque la nécessité, et parfo:s la probabilité, de pcu'loir, qui marque la possibilité, de savoir, marque de l…",
+        "bescherelle la conjugaison pour tous.pdf p.109: t d\"obJet er, devient I~' sujet, Lf miel est produit par le..~ abeilles. sujet - On pre '1d~, spé;;:;aierrle'1! garde â '1t- pas :::o'1fondre le com p ~é ment d'objet direct ~ avec les complément s CI;con stanciels construits dire ctement: Il boit la nuit, il…"
+      ],
+      "sources": [
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 33,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p33-c71"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 58,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p58-c130"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 58,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p58-c131"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 107,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p107-c232"
+        },
+        {
+          "document": "bescherelle la conjugaison pour tous.pdf",
+          "page": 107,
+          "chunkId": "bescherelle la conjugaison pour tous.pdf-p107-c233"
+        }
+      ]
+    },
+    "homophone_ta_tas": {
+      "titreAide": "Repère Bescherelle — homophone_ta_tas",
+      "memo": "Repère Bescherelle extrait des ressources intégrales.",
+      "regle": "Voir les extraits Bescherelle pour la règle détaillée.",
+      "exemples": [
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.69: ratif en -ci renvoie à l’élé - ment le plus proche dans la réalité ou dans le texte et le démonstratif en -là renvoie à l’élément le plus éloigné dans la réalité ou dans le texte. Je préfère ce costume-ci, mais ce costume-là est moins cher. Le vêtement que dé…",
+        "Bescherelle La grammaire pour tous.pdf p.192: 190 – la personne mise en relation avec le référent que ce nom représente. On a rayé sa voiture. La mienne n’a rien. Et la tienne ? La mienne signifie : la voiture qui est à moi (première personne du singulier). La tienne signifie : la voiture qui est à toi (…",
+        "Bescherelle La grammaire pour tous.pdf p.288: t avoir un emploi anaphorique. On distingue : les anaphores pronominales , les anaphores nominales , les anaphores adverbiales , adjectivales et verbales . L’anaphore pronominale • Elle est la plus employée. Elle repose sur l’emploi de pronoms représen - tant…",
+        "Bescherelle Lorthographe pour tous.pdf p.50: 48 • le ô des pronoms possessifs nôtre et vôtre pour les distinguer des détermi- nants (ou adjectifs) possessifs notre et votre. AVEC OU SANS ACCENT CIRCONFLEXE ? LES ERREURS LES PLUS FRÉQUENTES -âtre ou -iatre ? ❚ On écrit -âtre, avec un accent circonfl exe…",
+        "Bescherelle Lorthographe pour tous.pdf p.114: 112 ❚ Tout (toute, tous, toutes) est un déterminant indéfini quand il signifie n’importe quel, l’ensemble des, la totalité des. L’accord de tout est traité au paragraphe ➜ 338. votre ou vôtre ? ❚ On écrit votre, déterminant possessif, quand on pourrait dire t…",
+        "bescherelle la conjugaison pour tous.pdf p.3: our trouver rapidement les formes de tous les verbes utilisés en français. • 88 tableaux (numérotés de 1 à 88) Ils donnent, pour les 88 verbes retenus comme modèles, l'ensemble des formes simples et composées . L'existence des formes surcomposées est rappelée…",
+        "bescherelle la conjugaison pour tous.pdf p.10: s vous eûtes été soyez aye-\" été ils fur en t ils eure nt , , ete Futur simple Futu r antérieur INF I NITIF je ., aurai été s(~ r a l J t u seras tu aura s été Présent Passé il sera il aura été ptrc avoir été n o us serons nou s aurons été vou s serez: vou s…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 69,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p69-c130"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 192,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p192-c378"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 288,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p288-c565"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 50,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p50-c84"
+        }
+      ]
+    },
+    "homophone_mon_mont": {
+      "titreAide": "Repère Bescherelle — homophone_mon_mont",
+      "memo": "Repère Bescherelle extrait des ressources intégrales.",
+      "regle": "Voir les extraits Bescherelle pour la règle détaillée.",
+      "exemples": [
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.69: ratif en -ci renvoie à l’élé - ment le plus proche dans la réalité ou dans le texte et le démonstratif en -là renvoie à l’élément le plus éloigné dans la réalité ou dans le texte. Je préfère ce costume-ci, mais ce costume-là est moins cher. Le vêtement que dé…",
+        "Bescherelle La grammaire pour tous.pdf p.192: 190 – la personne mise en relation avec le référent que ce nom représente. On a rayé sa voiture. La mienne n’a rien. Et la tienne ? La mienne signifie : la voiture qui est à moi (première personne du singulier). La tienne signifie : la voiture qui est à toi (…",
+        "Bescherelle La grammaire pour tous.pdf p.288: t avoir un emploi anaphorique. On distingue : les anaphores pronominales , les anaphores nominales , les anaphores adverbiales , adjectivales et verbales . L’anaphore pronominale • Elle est la plus employée. Elle repose sur l’emploi de pronoms représen - tant…",
+        "Bescherelle Lorthographe pour tous.pdf p.50: 48 • le ô des pronoms possessifs nôtre et vôtre pour les distinguer des détermi- nants (ou adjectifs) possessifs notre et votre. AVEC OU SANS ACCENT CIRCONFLEXE ? LES ERREURS LES PLUS FRÉQUENTES -âtre ou -iatre ? ❚ On écrit -âtre, avec un accent circonfl exe…",
+        "Bescherelle Lorthographe pour tous.pdf p.114: 112 ❚ Tout (toute, tous, toutes) est un déterminant indéfini quand il signifie n’importe quel, l’ensemble des, la totalité des. L’accord de tout est traité au paragraphe ➜ 338. votre ou vôtre ? ❚ On écrit votre, déterminant possessif, quand on pourrait dire t…",
+        "bescherelle la conjugaison pour tous.pdf p.3: our trouver rapidement les formes de tous les verbes utilisés en français. • 88 tableaux (numérotés de 1 à 88) Ils donnent, pour les 88 verbes retenus comme modèles, l'ensemble des formes simples et composées . L'existence des formes surcomposées est rappelée…",
+        "bescherelle la conjugaison pour tous.pdf p.10: s vous eûtes été soyez aye-\" été ils fur en t ils eure nt , , ete Futur simple Futu r antérieur INF I NITIF je ., aurai été s(~ r a l J t u seras tu aura s été Présent Passé il sera il aura été ptrc avoir été n o us serons nou s aurons été vou s serez: vou s…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 69,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p69-c130"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 192,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p192-c378"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 288,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p288-c565"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 50,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p50-c84"
+        }
+      ]
+    },
+    "homophone_ton_tont": {
+      "titreAide": "Repère Bescherelle — homophone_ton_tont",
+      "memo": "Repère Bescherelle extrait des ressources intégrales.",
+      "regle": "Voir les extraits Bescherelle pour la règle détaillée.",
+      "exemples": [
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.69: ratif en -ci renvoie à l’élé - ment le plus proche dans la réalité ou dans le texte et le démonstratif en -là renvoie à l’élément le plus éloigné dans la réalité ou dans le texte. Je préfère ce costume-ci, mais ce costume-là est moins cher. Le vêtement que dé…",
+        "Bescherelle La grammaire pour tous.pdf p.192: 190 – la personne mise en relation avec le référent que ce nom représente. On a rayé sa voiture. La mienne n’a rien. Et la tienne ? La mienne signifie : la voiture qui est à moi (première personne du singulier). La tienne signifie : la voiture qui est à toi (…",
+        "Bescherelle La grammaire pour tous.pdf p.288: t avoir un emploi anaphorique. On distingue : les anaphores pronominales , les anaphores nominales , les anaphores adverbiales , adjectivales et verbales . L’anaphore pronominale • Elle est la plus employée. Elle repose sur l’emploi de pronoms représen - tant…",
+        "Bescherelle Lorthographe pour tous.pdf p.50: 48 • le ô des pronoms possessifs nôtre et vôtre pour les distinguer des détermi- nants (ou adjectifs) possessifs notre et votre. AVEC OU SANS ACCENT CIRCONFLEXE ? LES ERREURS LES PLUS FRÉQUENTES -âtre ou -iatre ? ❚ On écrit -âtre, avec un accent circonfl exe…",
+        "Bescherelle Lorthographe pour tous.pdf p.114: 112 ❚ Tout (toute, tous, toutes) est un déterminant indéfini quand il signifie n’importe quel, l’ensemble des, la totalité des. L’accord de tout est traité au paragraphe ➜ 338. votre ou vôtre ? ❚ On écrit votre, déterminant possessif, quand on pourrait dire t…",
+        "bescherelle la conjugaison pour tous.pdf p.3: our trouver rapidement les formes de tous les verbes utilisés en français. • 88 tableaux (numérotés de 1 à 88) Ils donnent, pour les 88 verbes retenus comme modèles, l'ensemble des formes simples et composées . L'existence des formes surcomposées est rappelée…",
+        "bescherelle la conjugaison pour tous.pdf p.10: s vous eûtes été soyez aye-\" été ils fur en t ils eure nt , , ete Futur simple Futu r antérieur INF I NITIF je ., aurai été s(~ r a l J t u seras tu aura s été Présent Passé il sera il aura été ptrc avoir été n o us serons nou s aurons été vou s serez: vou s…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 69,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p69-c130"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 192,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p192-c378"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 288,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p288-c565"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 50,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p50-c84"
+        }
+      ]
+    },
+    "homophone_ma_ma_verbe": {
+      "titreAide": "Repère Bescherelle — homophone_ma_ma_verbe",
+      "memo": "Repère Bescherelle extrait des ressources intégrales.",
+      "regle": "Voir les extraits Bescherelle pour la règle détaillée.",
+      "exemples": [
+        "Bescherelle La grammaire pour tous.pdf p.64: 62 Le déterminant est variable en genre et en nombre • Le déterminant s’accorde en genre et en nombre avec le nom. nuage → le nuage (accord en genre), les nuages (accord en nombre) tempête → cette tempête (accord en genre), ces tempêtes (accord en nombre) Les…",
+        "Bescherelle La grammaire pour tous.pdf p.69: ratif en -ci renvoie à l’élé - ment le plus proche dans la réalité ou dans le texte et le démonstratif en -là renvoie à l’élément le plus éloigné dans la réalité ou dans le texte. Je préfère ce costume-ci, mais ce costume-là est moins cher. Le vêtement que dé…",
+        "Bescherelle La grammaire pour tous.pdf p.192: 190 – la personne mise en relation avec le référent que ce nom représente. On a rayé sa voiture. La mienne n’a rien. Et la tienne ? La mienne signifie : la voiture qui est à moi (première personne du singulier). La tienne signifie : la voiture qui est à toi (…",
+        "Bescherelle La grammaire pour tous.pdf p.288: t avoir un emploi anaphorique. On distingue : les anaphores pronominales , les anaphores nominales , les anaphores adverbiales , adjectivales et verbales . L’anaphore pronominale • Elle est la plus employée. Elle repose sur l’emploi de pronoms représen - tant…",
+        "Bescherelle Lorthographe pour tous.pdf p.50: 48 • le ô des pronoms possessifs nôtre et vôtre pour les distinguer des détermi- nants (ou adjectifs) possessifs notre et votre. AVEC OU SANS ACCENT CIRCONFLEXE ? LES ERREURS LES PLUS FRÉQUENTES -âtre ou -iatre ? ❚ On écrit -âtre, avec un accent circonfl exe…",
+        "Bescherelle Lorthographe pour tous.pdf p.114: 112 ❚ Tout (toute, tous, toutes) est un déterminant indéfini quand il signifie n’importe quel, l’ensemble des, la totalité des. L’accord de tout est traité au paragraphe ➜ 338. votre ou vôtre ? ❚ On écrit votre, déterminant possessif, quand on pourrait dire t…",
+        "bescherelle la conjugaison pour tous.pdf p.3: our trouver rapidement les formes de tous les verbes utilisés en français. • 88 tableaux (numérotés de 1 à 88) Ils donnent, pour les 88 verbes retenus comme modèles, l'ensemble des formes simples et composées . L'existence des formes surcomposées est rappelée…",
+        "bescherelle la conjugaison pour tous.pdf p.10: s vous eûtes été soyez aye-\" été ils fur en t ils eure nt , , ete Futur simple Futu r antérieur INF I NITIF je ., aurai été s(~ r a l J t u seras tu aura s été Présent Passé il sera il aura été ptrc avoir été n o us serons nou s aurons été vou s serez: vou s…"
+      ],
+      "sources": [
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 64,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p64-c119"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 69,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p69-c130"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 192,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p192-c378"
+        },
+        {
+          "document": "Bescherelle La grammaire pour tous.pdf",
+          "page": 288,
+          "chunkId": "Bescherelle La grammaire pour tous.pdf-p288-c565"
+        },
+        {
+          "document": "Bescherelle Lorthographe pour tous.pdf",
+          "page": 50,
+          "chunkId": "Bescherelle Lorthographe pour tous.pdf-p50-c84"
+        }
+      ]
+    }
+  },
+  "stats": {
+    "types": 28,
+    "chunksAnalyses": 1813
+  }
+}

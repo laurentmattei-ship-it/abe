@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "genereLe": "2026-04-19T20:27:36.153Z",
+  "sources": [
+    "Sources/40-règles.txt"
+  ],
+  "nbRegles": 40,
+  "regles": [
+    {
+      "id": "R1",
+      "numero": 1,
+      "titre": "accord des adjectifs",
+      "resume": "Repère Bescherelle 1: accord des adjectifs.",
+      "contenu": "Règle 1: accord des adjectifs. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R2",
+      "numero": 2,
+      "titre": "accord du participe passé",
+      "resume": "Repère Bescherelle 2: accord du participe passé.",
+      "contenu": "Règle 2: accord du participe passé. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R3",
+      "numero": 3,
+      "titre": "accord des verbes",
+      "resume": "Repère Bescherelle 3: accord des verbes.",
+      "contenu": "Règle 3: accord des verbes. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R4",
+      "numero": 4,
+      "titre": "c / ç / cu et g / ge / gu",
+      "resume": "Repère Bescherelle 4: c / ç / cu et g / ge / gu.",
+      "contenu": "Règle 4: c / ç / cu et g / ge / gu. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R5",
+      "numero": 5,
+      "titre": "e et é / è",
+      "resume": "Repère Bescherelle 5: e et é / è.",
+      "contenu": "Règle 5: e et é / è. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R6",
+      "numero": 6,
+      "titre": "notre, le nôtre / votre, le vôtre",
+      "resume": "Repère Bescherelle 6: notre, le nôtre / votre, le vôtre.",
+      "contenu": "Règle 6: notre, le nôtre / votre, le vôtre. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R7",
+      "numero": 7,
+      "titre": "certains mots prennent toujours -s à la fin",
+      "resume": "Repère Bescherelle 7: certains mots prennent toujours -s à la fin.",
+      "contenu": "Règle 7: certains mots prennent toujours -s à la fin. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R8",
+      "numero": 8,
+      "titre": "tout / tous / toute / toutes",
+      "resume": "Repère Bescherelle 8: tout / tous / toute / toutes.",
+      "contenu": "Règle 8: tout / tous / toute / toutes. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R9",
+      "numero": 9,
+      "titre": "vingt / cent / mille",
+      "resume": "Repère Bescherelle 9: vingt / cent / mille.",
+      "contenu": "Règle 9: vingt / cent / mille. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R10",
+      "numero": 10,
+      "titre": "a / à et / est on / ont son / sont",
+      "resume": "Repère Bescherelle 10: a / à et / est on / ont son / sont.",
+      "contenu": "Règle 10: a / à et / est on / ont son / sont. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R11",
+      "numero": 11,
+      "titre": "ce / se c’est / s’est",
+      "resume": "Repère Bescherelle 11: ce / se c’est / s’est.",
+      "contenu": "Règle 11: ce / se c’est / s’est. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R12",
+      "numero": 12,
+      "titre": "ces / ses",
+      "resume": "Repère Bescherelle 12: ces / ses.",
+      "contenu": "Règle 12: ces / ses. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R13",
+      "numero": 13,
+      "titre": "la l’a / l’as là",
+      "resume": "Repère Bescherelle 13: la l’a / l’as là.",
+      "contenu": "Règle 13: la l’a / l’as là. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R14",
+      "numero": 14,
+      "titre": "leur / leurs",
+      "resume": "Repère Bescherelle 14: leur / leurs.",
+      "contenu": "Règle 14: leur / leurs. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R15",
+      "numero": 15,
+      "titre": "ma / m’a / m’as mon / m’ont ta / t’a ton / t’ont",
+      "resume": "Repère Bescherelle 15: ma / m’a / m’as mon / m’ont ta / t’a ton / t’ont.",
+      "contenu": "Règle 15: ma / m’a / m’as mon / m’ont ta / t’a ton / t’ont. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R16",
+      "numero": 16,
+      "titre": "mets / met m’es / m’est mes / mais",
+      "resume": "Repère Bescherelle 16: mets / met m’es / m’est mes / mais.",
+      "contenu": "Règle 16: mets / met m’es / m’est mes / mais. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R17",
+      "numero": 17,
+      "titre": "on / on n’",
+      "resume": "Repère Bescherelle 17: on / on n’.",
+      "contenu": "Règle 17: on / on n’. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R18",
+      "numero": 18,
+      "titre": "ou / où",
+      "resume": "Repère Bescherelle 18: ou / où.",
+      "contenu": "Règle 18: ou / où. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R19",
+      "numero": 19,
+      "titre": "peu peux / peut",
+      "resume": "Repère Bescherelle 19: peu peux / peut.",
+      "contenu": "Règle 19: peu peux / peut. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R20",
+      "numero": 20,
+      "titre": "quand / quant / qu’en",
+      "resume": "Repère Bescherelle 20: quand / quant / qu’en.",
+      "contenu": "Règle 20: quand / quant / qu’en. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R21",
+      "numero": 21,
+      "titre": "quel / quelle quels / quelles qu’elle / qu’elles",
+      "resume": "Repère Bescherelle 21: quel / quelle quels / quelles qu’elle / qu’elles.",
+      "contenu": "Règle 21: quel / quelle quels / quelles qu’elle / qu’elles. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R22",
+      "numero": 22,
+      "titre": "sens / sent s’en sans cent sang",
+      "resume": "Repère Bescherelle 22: sens / sent s’en sans cent sang.",
+      "contenu": "Règle 22: sens / sent s’en sans cent sang. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R23",
+      "numero": 23,
+      "titre": "si s’y -ci / ci- scie",
+      "resume": "Repère Bescherelle 23: si s’y -ci / ci- scie.",
+      "contenu": "Règle 23: si s’y -ci / ci- scie. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R24",
+      "numero": 24,
+      "titre": "ap / app-",
+      "resume": "Repère Bescherelle 24: ap / app-.",
+      "contenu": "Règle 24: ap / app-. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R25",
+      "numero": 25,
+      "titre": "mb / mm / mp",
+      "resume": "Repère Bescherelle 25: mb / mm / mp.",
+      "contenu": "Règle 25: mb / mm / mp. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R26",
+      "numero": 26,
+      "titre": "s / ss / z / x",
+      "resume": "Repère Bescherelle 26: s / ss / z / x.",
+      "contenu": "Règle 26: s / ss / z / x. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R27",
+      "numero": 27,
+      "titre": "pluriel général des noms et des adjectifs",
+      "resume": "Repère Bescherelle 27: pluriel général des noms et des adjectifs.",
+      "contenu": "Règle 27: pluriel général des noms et des adjectifs. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R28",
+      "numero": 28,
+      "titre": "pluriel des noms en -ail",
+      "resume": "Repère Bescherelle 28: pluriel des noms en -ail.",
+      "contenu": "Règle 28: pluriel des noms en -ail. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R29",
+      "numero": 29,
+      "titre": "pluriel des noms et des adjectifs en -al",
+      "resume": "Repère Bescherelle 29: pluriel des noms et des adjectifs en -al.",
+      "contenu": "Règle 29: pluriel des noms et des adjectifs en -al. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R30",
+      "numero": 30,
+      "titre": "pluriel des noms en -au / -eau / -eu",
+      "resume": "Repère Bescherelle 30: pluriel des noms en -au / -eau / -eu.",
+      "contenu": "Règle 30: pluriel des noms en -au / -eau / -eu. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R31",
+      "numero": 31,
+      "titre": "pluriel des noms en -ou",
+      "resume": "Repère Bescherelle 31: pluriel des noms en -ou.",
+      "contenu": "Règle 31: pluriel des noms en -ou. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R32",
+      "numero": 32,
+      "titre": "féminin des adjectifs en -et",
+      "resume": "Repère Bescherelle 32: féminin des adjectifs en -et.",
+      "contenu": "Règle 32: féminin des adjectifs en -et. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R33",
+      "numero": 33,
+      "titre": "féminin des adjectifs en -ot",
+      "resume": "Repère Bescherelle 33: féminin des adjectifs en -ot.",
+      "contenu": "Règle 33: féminin des adjectifs en -ot. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R34",
+      "numero": 34,
+      "titre": "noms et adjectifs en -el / -èle / -elle / -êle",
+      "resume": "Repère Bescherelle 34: noms et adjectifs en -el / -èle / -elle / -êle.",
+      "contenu": "Règle 34: noms et adjectifs en -el / -èle / -elle / -êle. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R35",
+      "numero": 35,
+      "titre": "noms terminés par -eur",
+      "resume": "Repère Bescherelle 35: noms terminés par -eur.",
+      "contenu": "Règle 35: noms terminés par -eur. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R36",
+      "numero": 36,
+      "titre": "noms terminés par -euil / -ueil",
+      "resume": "Repère Bescherelle 36: noms terminés par -euil / -ueil.",
+      "contenu": "Règle 36: noms terminés par -euil / -ueil. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R37",
+      "numero": 37,
+      "titre": "noms terminés par le son /o/",
+      "resume": "Repère Bescherelle 37: noms terminés par le son /o/.",
+      "contenu": "Règle 37: noms terminés par le son /o/. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R38",
+      "numero": 38,
+      "titre": "noms terminés par -oir / -oire",
+      "resume": "Repère Bescherelle 38: noms terminés par -oir / -oire.",
+      "contenu": "Règle 38: noms terminés par -oir / -oire. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R39",
+      "numero": 39,
+      "titre": "terminaison des participes passés et des adjectifs",
+      "resume": "Repère Bescherelle 39: terminaison des participes passés et des adjectifs.",
+      "contenu": "Règle 39: terminaison des participes passés et des adjectifs. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    },
+    {
+      "id": "R40",
+      "numero": 40,
+      "titre": "verbes terminés par -é / -er / -ez ; -i / -is / -it ; -u / -us / -ut",
+      "resume": "Repère Bescherelle 40: verbes terminés par -é / -er / -ez ; -i / -is / -it ; -u / -us / -ut.",
+      "contenu": "Règle 40: verbes terminés par -é / -er / -ez ; -i / -is / -it ; -u / -us / -ut. Voir la version détaillée dans Sources/40-règles.txt et les PDF Bescherelle.",
+      "source": "Sources/40-règles.txt"
+    }
+  ],
+  "mappingTypesErreurs": {
+    "accord_adjectif_nom": [
+      {
+        "id": "R1",
+        "numero": 1,
+        "titre": "accord des adjectifs",
+        "resume": "Repère Bescherelle 1: accord des adjectifs.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "verbe_participe_requis": [
+      {
+        "id": "R2",
+        "numero": 2,
+        "titre": "accord du participe passé",
+        "resume": "Repère Bescherelle 2: accord du participe passé.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R39",
+        "numero": 39,
+        "titre": "terminaison des participes passés et des adjectifs",
+        "resume": "Repère Bescherelle 39: terminaison des participes passés et des adjectifs.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R40",
+        "numero": 40,
+        "titre": "verbes terminés par -é / -er / -ez ; -i / -is / -it ; -u / -us / -ut",
+        "resume": "Repère Bescherelle 40: verbes terminés par -é / -er / -ez ; -i / -is / -it ; -u / -us / -ut.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "accord_sujet_verbe": [
+      {
+        "id": "R3",
+        "numero": 3,
+        "titre": "accord des verbes",
+        "resume": "Repère Bescherelle 3: accord des verbes.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "conjugaison_verbe": [
+      {
+        "id": "R3",
+        "numero": 3,
+        "titre": "accord des verbes",
+        "resume": "Repère Bescherelle 3: accord des verbes.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R40",
+        "numero": 40,
+        "titre": "verbes terminés par -é / -er / -ez ; -i / -is / -it ; -u / -us / -ut",
+        "resume": "Repère Bescherelle 40: verbes terminés par -é / -er / -ez ; -i / -is / -it ; -u / -us / -ut.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_a_a_grave": [
+      {
+        "id": "R10",
+        "numero": 10,
+        "titre": "a / à et / est on / ont son / sont",
+        "resume": "Repère Bescherelle 10: a / à et / est on / ont son / sont.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_a_a_sans": [
+      {
+        "id": "R10",
+        "numero": 10,
+        "titre": "a / à et / est on / ont son / sont",
+        "resume": "Repère Bescherelle 10: a / à et / est on / ont son / sont.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_et_est": [
+      {
+        "id": "R10",
+        "numero": 10,
+        "titre": "a / à et / est on / ont son / sont",
+        "resume": "Repère Bescherelle 10: a / à et / est on / ont son / sont.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_est_et": [
+      {
+        "id": "R10",
+        "numero": 10,
+        "titre": "a / à et / est on / ont son / sont",
+        "resume": "Repère Bescherelle 10: a / à et / est on / ont son / sont.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_on_ont": [
+      {
+        "id": "R10",
+        "numero": 10,
+        "titre": "a / à et / est on / ont son / sont",
+        "resume": "Repère Bescherelle 10: a / à et / est on / ont son / sont.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R17",
+        "numero": 17,
+        "titre": "on / on n’",
+        "resume": "Repère Bescherelle 17: on / on n’.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_son_sont": [
+      {
+        "id": "R10",
+        "numero": 10,
+        "titre": "a / à et / est on / ont son / sont",
+        "resume": "Repère Bescherelle 10: a / à et / est on / ont son / sont.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_ce_se": [
+      {
+        "id": "R11",
+        "numero": 11,
+        "titre": "ce / se c’est / s’est",
+        "resume": "Repère Bescherelle 11: ce / se c’est / s’est.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_se_ce": [
+      {
+        "id": "R11",
+        "numero": 11,
+        "titre": "ce / se c’est / s’est",
+        "resume": "Repère Bescherelle 11: ce / se c’est / s’est.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_ces_cest": [
+      {
+        "id": "R11",
+        "numero": 11,
+        "titre": "ce / se c’est / s’est",
+        "resume": "Repère Bescherelle 11: ce / se c’est / s’est.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R12",
+        "numero": 12,
+        "titre": "ces / ses",
+        "resume": "Repère Bescherelle 12: ces / ses.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_ses_cest": [
+      {
+        "id": "R11",
+        "numero": 11,
+        "titre": "ce / se c’est / s’est",
+        "resume": "Repère Bescherelle 11: ce / se c’est / s’est.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R12",
+        "numero": 12,
+        "titre": "ces / ses",
+        "resume": "Repère Bescherelle 12: ces / ses.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_leurs_leur": [
+      {
+        "id": "R14",
+        "numero": 14,
+        "titre": "leur / leurs",
+        "resume": "Repère Bescherelle 14: leur / leurs.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_leur_leurs": [
+      {
+        "id": "R14",
+        "numero": 14,
+        "titre": "leur / leurs",
+        "resume": "Repère Bescherelle 14: leur / leurs.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_ou_ou_grave": [
+      {
+        "id": "R18",
+        "numero": 18,
+        "titre": "ou / où",
+        "resume": "Repère Bescherelle 18: ou / où.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "homophone_ou_grave_ou": [
+      {
+        "id": "R18",
+        "numero": 18,
+        "titre": "ou / où",
+        "resume": "Repère Bescherelle 18: ou / où.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "mot_invariable": [
+      {
+        "id": "R7",
+        "numero": 7,
+        "titre": "certains mots prennent toujours -s à la fin",
+        "resume": "Repère Bescherelle 7: certains mots prennent toujours -s à la fin.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "invariable_s_fantome": [
+      {
+        "id": "R7",
+        "numero": 7,
+        "titre": "certains mots prennent toujours -s à la fin",
+        "resume": "Repère Bescherelle 7: certains mots prennent toujours -s à la fin.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "mot_liaison_lexical": [
+      {
+        "id": "R7",
+        "numero": 7,
+        "titre": "certains mots prennent toujours -s à la fin",
+        "resume": "Repère Bescherelle 7: certains mots prennent toujours -s à la fin.",
+        "source": "Sources/40-règles.txt"
+      }
+    ],
+    "accord_nom_nombre": [
+      {
+        "id": "R27",
+        "numero": 27,
+        "titre": "pluriel général des noms et des adjectifs",
+        "resume": "Repère Bescherelle 27: pluriel général des noms et des adjectifs.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R28",
+        "numero": 28,
+        "titre": "pluriel des noms en -ail",
+        "resume": "Repère Bescherelle 28: pluriel des noms en -ail.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R29",
+        "numero": 29,
+        "titre": "pluriel des noms et des adjectifs en -al",
+        "resume": "Repère Bescherelle 29: pluriel des noms et des adjectifs en -al.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R30",
+        "numero": 30,
+        "titre": "pluriel des noms en -au / -eau / -eu",
+        "resume": "Repère Bescherelle 30: pluriel des noms en -au / -eau / -eu.",
+        "source": "Sources/40-règles.txt"
+      },
+      {
+        "id": "R31",
+        "numero": 31,
+        "titre": "pluriel des noms en -ou",
+        "resume": "Repère Bescherelle 31: pluriel des noms en -ou.",
+        "source": "Sources/40-règles.txt"
+      }
+    ]
+  }
+}
